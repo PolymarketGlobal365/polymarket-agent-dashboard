@@ -1,0 +1,297 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const outPath = path.resolve("proposal_2026_art_trade_data_unitmedia_hwp_editable_table.html");
+
+function esc(text) {
+  return String(text ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function pageOpen() {
+  return `<div style="page-break-after:always; width:100%; margin:0; padding:0;">`;
+}
+
+function pageClose(pageNo) {
+  return `<div style="margin-top:10pt; text-align:right; color:#6b7c8d; font-size:9pt; border-top:1px solid #d3dae2; padding-top:4pt;">${pageNo}</div></div>`;
+}
+
+function sectionCover(no, title, summary) {
+  return `
+${pageOpen()}
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #d7dfe8; background-color:#fcfcfc;">
+  <tr><td style="padding:28mm 18mm 22mm 18mm;">
+    <div style="font-size:34pt; color:#d9e3ee; font-weight:bold; line-height:1;">${esc(no)}</div>
+    <div style="font-size:22pt; color:#17375a; font-weight:bold; margin-top:6pt;">${esc(title)}</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:18pt;">
+      <tr>
+        <td style="border-left:4px solid #375f87; background-color:#f6f9fc; padding:10pt 12pt; color:#425b74; font-size:11pt; line-height:1.75;">
+          ${esc(summary)}
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+</table>
+${pageClose(no)}
+`;
+}
+
+function contentPage(pageNo, title, intro, sections) {
+  let body = `
+${pageOpen()}
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #d7dfe8; background-color:#fcfcfc;">
+  <tr><td style="padding:16mm 14mm 14mm 14mm;">
+    <div style="font-size:14pt; color:#17375a; font-weight:bold; margin-bottom:8pt;">${esc(title)}</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-left:4px solid #375f87; background-color:#f6f9fc; padding:10pt 12pt; font-size:10.5pt; color:#425b74; line-height:1.75;">${esc(intro)}</td></tr></table>
+`;
+
+  for (const section of sections) {
+    body += `<div style="font-size:12pt; color:#17375a; font-weight:bold; margin-top:14pt; margin-bottom:6pt;">${esc(section.heading)}</div>`;
+    if (section.paragraphs) {
+      for (const p of section.paragraphs) {
+        body += `<div style="font-size:10.5pt; color:#1f3552; line-height:1.75; margin-bottom:8pt;">${esc(p)}</div>`;
+      }
+    }
+    if (section.bullets) {
+      body += `<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:6pt;">`;
+      for (const b of section.bullets) {
+        body += `<tr><td width="14" valign="top" style="font-size:10.5pt; color:#1f3552; line-height:1.7;">-</td><td valign="top" style="font-size:10.5pt; color:#1f3552; line-height:1.7; padding-bottom:4pt;">${esc(b)}</td></tr>`;
+      }
+      body += `</table>`;
+    }
+    if (section.table) {
+      body += `<table width="100%" cellpadding="0" cellspacing="0" border="1" style="border-collapse:collapse; border-color:#c5d0db; margin-top:4pt; margin-bottom:8pt;">`;
+      body += `<tr>`;
+      for (const h of section.table.headers) {
+        body += `<td style="background-color:#eef3f8; color:#17375a; font-weight:bold; font-size:10pt; padding:6pt 7pt;">${esc(h)}</td>`;
+      }
+      body += `</tr>`;
+      for (const row of section.table.rows) {
+        body += `<tr>`;
+        for (const cell of row) {
+          body += `<td style="font-size:9.5pt; color:#1f3552; padding:6pt 7pt; line-height:1.65;">${esc(cell)}</td>`;
+        }
+        body += `</tr>`;
+      }
+      body += `</table>`;
+    }
+    if (section.twobox) {
+      body += `<table width="100%" cellpadding="0" cellspacing="14" border="0"><tr>`;
+      for (const box of section.twobox) {
+        body += `<td valign="top" style="border:1px solid #d3dae2; background-color:#f7f9fb; padding:12pt 14pt;"><div style="font-size:12pt; color:#17375a; font-weight:bold; margin-bottom:6pt;">${esc(box.title)}</div><div style="font-size:10.5pt; color:#1f3552; line-height:1.75;">${esc(box.text)}</div></td>`;
+      }
+      body += `</tr></table>`;
+    }
+    if (section.note) {
+      body += `<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8pt;"><tr><td style="border:1px dashed #b5c0cb; background-color:#fcfcfd; padding:9pt 11pt; color:#586a7b; font-size:10pt; line-height:1.7;">${esc(section.note)}</td></tr></table>`;
+    }
+  }
+
+  body += `</td></tr></table>${pageClose(pageNo)}`;
+  return body;
+}
+
+const html = `
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>2026년 미술작품 거래자료 수집 및 관리 대행 용역 제안서</title>
+</head>
+<body style="margin:0; padding:0; background:#ffffff; font-family:'Malgun Gothic',sans-serif; color:#1f3552; font-size:11pt; line-height:1.75;">
+
+${pageOpen()}
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #d7dfe8; background-color:#fcfcfc;">
+  <tr><td style="padding:24mm 16mm 18mm 16mm;">
+    <div style="display:inline-block; border:1px solid #8ea0b4; color:#1e3c61; font-size:9pt; letter-spacing:1px; padding:5px 10px; margin-bottom:18mm;">PROPOSAL DOCUMENT / A4 PORTRAIT</div>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px dashed #8fa1b7; margin-bottom:14pt;">
+      <tr><td style="padding:10pt 12pt;">
+        <div style="font-size:24pt; font-weight:bold; color:#17375a; line-height:1.35; margin-bottom:8pt;">2026년 미술작품 거래자료 수집 및 관리 대행 용역</div>
+        <div style="font-size:12pt; color:#59718a; line-height:1.7;">공공기관 요구 수준의 정확성, 미술시장 데이터 해석 역량, 경매사·플랫폼별 운영 노하우를 결합한 유니트미디어의 정성제안서입니다.</div>
+      </td></tr>
+    </table>
+    <div style="margin-bottom:16pt;">
+      <span style="display:inline-block; padding:4px 10px; border:1px solid #c8d3de; border-radius:20px; background:#fff; color:#23456c; font-size:10pt; margin:0 6px 7px 0;">국내 12개 경매사 대응</span>
+      <span style="display:inline-block; padding:4px 10px; border:1px solid #c8d3de; border-radius:20px; background:#fff; color:#23456c; font-size:10pt; margin:0 6px 7px 0;">해외 3개 경매사 + 2개 플랫폼</span>
+      <span style="display:inline-block; padding:4px 10px; border:1px solid #c8d3de; border-radius:20px; background:#fff; color:#23456c; font-size:10pt; margin:0 6px 7px 0;">7일 이내 검수·제출 체계</span>
+      <span style="display:inline-block; padding:4px 10px; border:1px solid #c8d3de; border-radius:20px; background:#fff; color:#23456c; font-size:10pt; margin:0 6px 7px 0;">식별 ID 표준화</span>
+      <span style="display:inline-block; padding:4px 10px; border:1px solid #c8d3de; border-radius:20px; background:#fff; color:#23456c; font-size:10pt; margin:0 6px 7px 0;">자료 오류 최소화</span>
+      <span style="display:inline-block; padding:4px 10px; border:1px solid #c8d3de; border-radius:20px; background:#fff; color:#23456c; font-size:10pt; margin:0 6px 7px 0;">시스템 연동 협업</span>
+    </div>
+    <table width="100%" cellpadding="0" cellspacing="14" border="0">
+      <tr>
+        <td valign="top" style="width:50%; border:1px solid #d3dae2; background-color:#f7f9fb; padding:12pt 14pt;">
+          <div style="font-size:12pt; color:#17375a; font-weight:bold; margin-bottom:6pt;">제안 방향</div>
+          <div style="font-size:10.5pt; line-height:1.75; color:#1f3552;">본 용역은 단순 수집이 아니라 공개 기간이 짧고 표기 방식이 상이한 미술품 경매 정보를 시의성 있게 확보하고, 검수와 변경 반영까지 안정적으로 수행하는 데이터 운영형 과업입니다. 유니트미디어는 수집-정규화-검수-등록 협업 전 과정을 한 흐름으로 설계하여, 발주처가 즉시 활용 가능한 신뢰도 높은 거래자료를 적기에 제공하겠습니다.</div>
+        </td>
+        <td valign="top" style="width:50%; border:1px solid #d3dae2; background-color:#f7f9fb; padding:12pt 14pt;">
+          <div style="font-size:12pt; color:#17375a; font-weight:bold; margin-bottom:6pt;">핵심 약속</div>
+          <div style="font-size:10.5pt; line-height:1.75; color:#1f3552;">국내외 경매 일정 선제 모니터링, 출품·낙찰 정보 및 이미지 병행 확보, 검수표와 보고서 동시 운영, 시스템운영사와의 연동 협업, 경매 종료 후 약 7일 이내 검수 완료 및 자료 제출 체계를 확립합니다.</div>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" border="1" style="border-collapse:collapse; border-color:#bdc9d6; margin-top:14pt;">
+      <tr><td style="background:#eef3f8; font-weight:bold; padding:7pt 8pt; font-size:10pt;">사업명</td><td style="padding:7pt 8pt; font-size:10pt;">2026년 미술작품 거래자료 수집 및 관리 대행 용역</td><td style="background:#eef3f8; font-weight:bold; padding:7pt 8pt; font-size:10pt;">과업기간</td><td style="padding:7pt 8pt; font-size:10pt;">계약 후 ~ 2026. 12. 18.</td></tr>
+      <tr><td style="background:#eef3f8; font-weight:bold; padding:7pt 8pt; font-size:10pt;">사업예산</td><td style="padding:7pt 8pt; font-size:10pt;">금60,000,000원 (VAT 포함)</td><td style="background:#eef3f8; font-weight:bold; padding:7pt 8pt; font-size:10pt;">제안사</td><td style="padding:7pt 8pt; font-size:10pt;">유니트미디어</td></tr>
+    </table>
+  </td></tr>
+</table>
+${pageClose("01")}
+
+${contentPage("02", "목차 및 제안 핵심 요약", "표준 목차 순서를 유지하면서 평가위원이 빠르게 구조를 파악할 수 있도록 재정리했습니다.", [
+  { heading: "목차", bullets: [
+    "01. 제안배경 및 개요",
+    "02. 제안범위",
+    "03. 일반현황",
+    "04. 본 용역사업 수행에 있어서의 강점",
+    "05. 과업의 추진방법, 추진체계, 추진일정",
+    "06. 구체적인 운영계획 및 인력 투입계획",
+    "07. 용역 과정에서 예상되는 문제점 및 보완대책"
+  ]},
+  { heading: "핵심 메시지", bullets: [
+    "경매 종료 이전부터 일정과 프리뷰 정보를 추적해 자료 미수집 리스크를 선제적으로 줄입니다.",
+    "작가, 작품, 거래, 이미지, 식별 ID를 하나의 운영 규칙으로 정리해 데이터 활용성을 높입니다.",
+    "상시 검수와 정기 검수의 이중 구조를 통해 오류와 변경사항을 체계적으로 관리합니다.",
+    "발주처 및 시스템운영사와의 협업 절차를 명확히 두어 등록 지연과 해석 차이를 최소화합니다."
+  ]},
+  { note: "본 문서는 제출용 초안 성격의 정성제안서입니다. 회사 고유 수치가 필요한 자본규모, 신용등급, 실제 투입 인력의 성명·직위 등은 제출 직전 증빙서류와 동일한 값으로 최종 대체할 수 있도록 안전한 문맥으로 구성했습니다."}
+])}
+
+${sectionCover("03", "제안배경 및 개요", "시의성, 정확성, 관리 용이성이 모두 요구되는 미술시장 거래자료 과업 특성을 분석하고, 발주처가 요구하는 목적과 결과물을 어떻게 안정적으로 달성할 것인지 제안의 기본 구조를 제시합니다.")}
+
+${contentPage("04", "사업 이해와 제안 배경", "본 과업은 “수집”보다 “적기 확보와 신뢰도 유지”가 더 중요한 데이터 운영 사업입니다.", [
+  { heading: "사업 배경", paragraphs: [
+    "미술품 경매자료는 경매사별 공시 방식, 표기 언어, 규격 단위, 결과 수정 시점이 서로 다르며, 경매 종료 후 일정 기간만 공개되는 자료가 많아 선제적 모니터링과 신속한 확보 체계가 없으면 미수집과 오류 누락이 발생하기 쉽습니다.",
+    "따라서 본 사업은 미술시장 이해, 데이터 표준화 역량, 검수 및 변경 반영 관리 능력을 모두 갖춘 수행 체계가 필수적입니다."
+  ]},
+  { heading: "과업 배경별 리스크", table: {
+    headers: ["배경 요소", "발생 가능한 문제", "필요 대응", "제안 방향"],
+    rows: [
+      ["공개 기간 제한", "종료 후 일정 기간이 지나면 자료 미노출, 이미지 회수", "경매 일정 사전 등록, 프리뷰/종료 직후 즉시 수집", "상시 모니터링 캘린더와 알림 기반 선제 대응"],
+      ["표기 형식 상이", "작가명, 작품명, 규격, 재료 표기 불일치", "표준 항목 정의와 정규화 규칙 운영", "국문·영문·원어 병기 원칙과 데이터 사전화"],
+      ["결과 수정 빈번", "출품취소, LOT 변경, 낙찰가 보정 반영 지연", "정기 검수와 변경 이력 관리", "수집본-검수본-최종본 3단계 버전관리"]
+    ]
+  }}
+])}
+
+${contentPage("05", "과업목적과 제안 개요", "사용자 제공 과업개요를 기반으로 목적과 제안 구조를 발주처 언어로 재정리했습니다.", [
+  { heading: "과업 개요", table: {
+    headers: ["항목", "내용"],
+    rows: [
+      ["과업명", "2026년 미술작품 거래자료 수집 및 관리 대행 용역"],
+      ["과업목적", "시의성 있고 안정적인 미술작품 거래자료 수집, 전문 대행업체 활용을 통한 자료 신뢰성 확보 및 자료 관리 프로세스 마련"],
+      ["총 사업기간", "계약 후 ~ 2026. 12. 18."],
+      ["총 소요예산", "금60,000,000원 (VAT 포함)"],
+      ["입찰·계약 방식", "제한경쟁(총액), 협상에 의한 계약"]
+    ]
+  }},
+  { heading: "유니트미디어 제안 개요", bullets: [
+    "수집 대상 캘린더화",
+    "출품·낙찰 동시 확보",
+    "데이터 정규화",
+    "다층 검수",
+    "시스템 협업 등록",
+    "변경사항 반영"
+  ]}
+])}
+
+${sectionCover("06", "제안범위", "국내·해외 수집 대상, 세부 수집 항목, 자료 형태, 협업 범위를 명확히 구분하여 과업 이해도를 높이고 실행계획의 기준선을 제시합니다.")}
+
+${contentPage("07", "수집 범위 개요", "국내 12개 경매사, 해외 3개 경매사, 2개 플랫폼을 아우르는 통합 수집 범위입니다.", [
+  { heading: "수집 범위", table: {
+    headers: ["구분", "대상", "기간", "주요 내용"],
+    rows: [
+      ["국내", "12개 경매사", "2026.04 ~ 2026.12", "미술작품 출품 및 낙찰 자료, 작품 이미지, 경매사 공개자료 수집 및 검수"],
+      ["해외", "3개 경매사 + 2개 플랫폼", "2026.04 ~ 2026.12", "해외 온·오프라인 경매에 출품된 한국 작가 미술품 자료 수집 및 분류"],
+      ["검수", "전 수집 대상", "상시 + 정기", "자료 오류 수정, 낙찰가 및 LOT 변경사항 반영, 검수표 작성"],
+      ["등록 협업", "발주처 + 시스템운영사 협의 범위", "상시", "자료 이동, 시스템·프로그램 연동, 최종 등록 기준 협의"]
+    ]
+  }},
+  { heading: "대상 경매사 및 플랫폼", bullets: [
+    "국내 : 서울옥션, 케이옥션, 꼬모옥션, 라이즈아트, 마이아트옥션, 아이옥션, 에이옥션, 칸옥션, 토탈아트옥션, 헤럴드아트데이, 캐터옥션, 포털아트",
+    "해외 : 소더비, 크리스티, 필립스, Artprice, MutualArt"
+  ]}
+])}
+
+${contentPage("08", "수집 데이터 항목 정의", "작가-작품-거래-거래처-식별-이미지의 6개 묶음으로 관리합니다.", [
+  { heading: "세부 항목", table: {
+    headers: ["영역", "세부 항목"],
+    rows: [
+      ["작가 정보", "작가명(국문·영문·중문 등 제시된 고유 언어), 호, 생몰정보, 성별"],
+      ["작품 정보", "LOT, 작품명, 제작년도, 재료, 에디션, 규격"],
+      ["거래 정보", "추정가(최하·최고), 낙찰가"],
+      ["거래처 정보", "경매사, 날짜, 옥션명, 판매방식"],
+      ["식별 정보", "동일 작가·동일 작품 구분을 위한 식별 ID(CODE)"],
+      ["이미지", "출품 및 낙찰 작품 이미지, 공개자료 화면 이미지"]
+    ]
+  }},
+  { heading: "운영 원칙", bullets: [
+    "원어 병기 원칙",
+    "규격 표준화 원칙",
+    "식별성 확보 원칙"
+  ]}
+])}
+
+${sectionCover("09", "일반현황", "제안사의 설립 목적, 일반현황, 최근 수행 경향, 입찰 대응 자격 보유 현황을 중심으로 본 과업 수행 기반을 설명합니다.")}
+
+${contentPage("10", "유니트미디어 일반현황", "허위 기재를 피하기 위해 증빙서류와 동일 값으로 치환이 필요한 정량 항목은 제출본 반영 표기로 구성했습니다.", [
+  { heading: "일반현황", table: {
+    headers: ["항목", "내용"],
+    rows: [
+      ["회사명", "유니트미디어"],
+      ["설립목적", "공공·문화예술·브랜딩 분야에서 기획, 콘텐츠 제작, 자료운영, 커뮤니케이션 실행을 통합 지원하는 실무형 전문 수행사"],
+      ["주요 사업영역", "콘텐츠 기획·제작, 공공홍보, 문화예술 프로젝트 지원, 자료 조사 및 운영, 데이터 기반 보고물 제작"],
+      ["자본규모", "[제출본 반영] 법인등기부 및 재무자료 기준 최종 반영"],
+      ["기업신용등급", "[제출본 반영] 공공입찰용 신용평가 확인서 기준 최종 반영"]
+    ]
+  }},
+  { heading: "보유 역량", bullets: [
+    "공공 제안서 기획 경험",
+    "문화예술 분야 문서·콘텐츠 대응",
+    "자료조사 및 운영형 프로젝트 경험",
+    "PM 중심 실무 통제 방식"
+  ]},
+  { note: "제출용 최종본에서는 자본금, 설립일, 대표자명, 주소, 신용등급, 사업자번호 등 정량 항목을 제출 증빙과 동일하게 반영합니다."}
+])}
+
+${sectionCover("11", "본 용역사업 수행에 있어서의 강점", "미술시장 데이터 이해, 수집 운영 체계, 다층 검수 역량, 시스템 협업 능력이라는 네 가지 강점을 중심으로 유니트미디어의 경쟁력을 설명합니다.")}
+
+${contentPage("12", "수행 강점 및 추진·운영 개요", "본 과업은 일반 조사사업과 다른 미술시장 고유 특성을 이해해야 안정적으로 수행할 수 있습니다.", [
+  { heading: "핵심 강점", bullets: [
+    "강점 1. 미술시장 데이터 과업에 대한 이해도",
+    "강점 2. 선제형 자료 수집 운영체계",
+    "강점 3. 오류를 줄이는 다층 검수 구조",
+    "강점 4. PM 중심 협업과 시스템 연동 대응력"
+  ]},
+  { heading: "추진방법", bullets: [
+    "1단계 : 자료 수집 대상 설정",
+    "2단계 : 자료 수집",
+    "3단계 : 수집 자료 검수",
+    "4단계 : 자료 이동",
+    "5단계 : 자료 재검수",
+    "6단계 : 시스템 및 프로그램 연동"
+  ]},
+  { heading: "운영계획 및 인력 계획", bullets: [
+    "국내 경매사 운영 : 일정 관리, 프리뷰 선수집, 결과 자료 수집, 검수 및 제출",
+    "해외 경매사 운영 : 세일 전체 확인 후 한국 작가 분류, 플랫폼 교차 검증",
+    "이미지 및 공개자료 관리 : 데이터, 이미지, 공개자료, 검수표 패키지 구성",
+    "실제 투입 인력 : PM, 국내 수집 담당, 해외 수집 담당, 검수/정규화 담당, 자료정리/보고 담당"
+  ]},
+  { heading: "예상 문제점 및 보완대책", bullets: [
+    "경매자료 조기 삭제 : 프리뷰 단계 선수집과 일정 알림으로 예방",
+    "경매 일정 변동 : 주간 일정 재확인과 변동 로그 운영",
+    "표기 방식 상이 : 표준 사전 운영과 예외 기준 협의",
+    "낙찰가·LOT 변경 : 정기 검수 루틴과 변경이력표 운영"
+  ]},
+  { note: "이 편집형 버전은 한글에서 텍스트 수정이 가능하도록 표 기반 구조로 재구성한 버전입니다. 필요 시 이 파일을 기준으로 실인력명, 회사 정보, 세부 표를 추가 반영할 수 있습니다."}
+])}
+
+</body></html>
+`;
+
+fs.writeFileSync(outPath, "\uFEFF" + html, "utf8");
+console.log(outPath);

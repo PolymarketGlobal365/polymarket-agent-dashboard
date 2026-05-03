@@ -1,0 +1,43 @@
+{
+  "name": "polymarketnow-card-news",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily Polymarket homepage crawler and Instagram card news generator",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "autotrade:link-user": "node dist/autotrade-link-user.js",
+    "forecast:dashboard": "node dist/polymarket-forecast-dashboard.js",
+    "generate": "node dist/index.js",
+    "reel:render": "node dist/chart-reel-cli.js render",
+    "reel:sample": "node dist/chart-reel-cli.js sample",
+    "telegram:program-bot": "node dist/telegram-program-bot.js",
+    "telegram:trading-bot": "node dist/telegram-polymarket-trading-bot.js",
+    "telegram:crypto": "node dist/telegram-crypto.js",
+    "telegram:status": "node dist/telegram-polymarket-status.js",
+    "telegram:polymarket-x": "node dist/telegram-polymarket-x.js",
+    "telegram:whales": "node dist/telegram-polymarket-whales.js",
+    "test": "npm run build && node scripts/verify-dist.mjs"
+  },
+  "dependencies": {
+    "@polymarket/clob-client-v2": "^1.0.2",
+    "@remotion/bundler": "^4.0.451",
+    "@remotion/google-fonts": "^4.0.451",
+    "@remotion/renderer": "^4.0.451",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "exceljs": "^4.4.0",
+    "playwright": "^1.52.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "remotion": "^4.0.451",
+    "viem": "^2.38.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  }
+}

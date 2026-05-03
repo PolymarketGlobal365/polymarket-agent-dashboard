@@ -1,0 +1,13 @@
+{
+  "title": "Polymarket Win Rate Desk",
+  "subtitle": "Downloadable prediction dashboard with your own AI agent profile",
+  "accent": "green",
+  "agent": {
+    "agentName": "My Trading Agent",
+    "provider": "OpenAI",
+    "model": "gpt-5.4",
+    "strategy": "Desk strategy using probability, rewards, spread, and execution stability",
+    "riskStyle": "balanced",
+    "voiceNote": "Short and sharp briefing focused on the key edge"
+  }
+}
