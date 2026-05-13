@@ -1,0 +1,50 @@
+{
+  "ticker": "NVDA",
+  "assetName": "NVIDIA",
+  "title": "NVDA ripped after the AI stack reset",
+  "subtitle": "A 3-beat reel template for trading recaps, breakout explainers, and weekly chart updates.",
+  "periodLabel": "1M Price Action",
+  "exchange": "NASDAQ",
+  "sourceLine": "Source: Stooq · Manual notes",
+  "cta": "Follow for the next setup.",
+  "accentColor": "#7CF7B1",
+  "benchmarkLabel": "vs SOXX",
+  "benchmarkReturn": 9.8,
+  "points": [
+    { "date": "2026-03-24", "close": 102.2 },
+    { "date": "2026-03-26", "close": 98.6 },
+    { "date": "2026-03-28", "close": 101.8 },
+    { "date": "2026-04-01", "close": 105.4 },
+    { "date": "2026-04-04", "close": 111.2 },
+    { "date": "2026-04-08", "close": 116.6 },
+    { "date": "2026-04-11", "close": 123.8 },
+    { "date": "2026-04-15", "close": 129.7 },
+    { "date": "2026-04-18", "close": 135.9 },
+    { "date": "2026-04-22", "close": 141.3 }
+  ],
+  "highlights": [
+    {
+      "at": "2026-04-01",
+      "title": "Base reclaim",
+      "body": "Buyers stepped back in after the first pullback held above the prior support shelf.",
+      "tone": "neutral"
+    },
+    {
+      "at": "2026-04-11",
+      "title": "Momentum ignition",
+      "body": "The clean break above the local high is where the reel zooms in and accelerates.",
+      "tone": "bullish"
+    },
+    {
+      "at": "2026-04-22",
+      "title": "Now what?",
+      "body": "Wrap on the latest close with one next-step takeaway and a CTA for the audience.",
+      "tone": "bullish"
+    }
+  ],
+  "summaryBullets": [
+    "Dark premium chart card with a moving focus window",
+    "Auto-filled stats, callouts, and short-form CTA",
+    "Companion Premiere package: SVG, SRT, timeline JSON, edit notes"
+  ]
+}

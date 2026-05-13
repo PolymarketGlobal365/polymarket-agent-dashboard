@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">05</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">비주얼 디렉션</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">톤앤매너, 공간감, 움직임, 그래픽 사용 원칙을 사전에 설계합니다</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      
+    <rect x="82" y="318" width="640" height="372" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2" stroke-dasharray="12 10" />
+    <text x="402" y="496" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Reference Moodboard</text>
+    <text x="402" y="530" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="500" text-anchor="middle">replace with still / frame / moodboard</text>
+  
+      <rect x="82" y="724" width="640" height="194" rx="24" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="118" y="772" fill="#FFCC85" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Direction Summary</text>
+      <text x="118" y="816" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="600" text-anchor="start">고급스러운 어두운 베이스 위에 포인트 컬러를</text>
+<text x="118" y="848" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="600" text-anchor="start">제한적으로 사용해 집중도를 높입니다.</text>
+      <rect x="770" y="318" width="1068" height="600" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      
+    <rect x="804" y="360" width="132" height="34" rx="12" fill="#9BC0FF20" stroke="#9BC0FF" stroke-width="1.5"/>
+    <text x="870" y="382" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle">STYLE SYSTEM</text>
+  
+      
+        <rect x="804" y="424" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="832" cy="455" r="14" fill="#5A2E21"/>
+        <text x="827" y="461" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="860" y="461" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">조명: 콘트라스트를 살린 깊이감 있는 라이팅</text>
+      
+
+        <rect x="804" y="502" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="832" cy="533" r="14" fill="#5A2E21"/>
+        <text x="827" y="539" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="860" y="539" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">색감: 핵심 색상만 남긴 절제된 팔레트</text>
+      
+
+        <rect x="804" y="580" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="832" cy="611" r="14" fill="#5A2E21"/>
+        <text x="827" y="617" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="860" y="617" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">카메라: 느리게 밀고 당기거나 리듬감 있는 전환</text>
+      
+
+        <rect x="804" y="658" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="832" cy="689" r="14" fill="#5A2E21"/>
+        <text x="827" y="695" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">4</text>
+        <text x="860" y="695" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">텍스트: 필요한 경우에만 짧고 명확하게 사용</text>
+      
+      <rect x="1312" y="424" width="490" height="422" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <text x="1344" y="472" fill="#83E1D6" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Continuity Rules</text>
+      
+        <rect x="1344" y="510" width="424" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1372" cy="541" r="14" fill="#5A2E21"/>
+        <text x="1367" y="547" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="1400" y="547" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">장면마다 광원 방향 유지</text>
+      
+
+        <rect x="1344" y="588" width="424" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1372" cy="619" r="14" fill="#5A2E21"/>
+        <text x="1367" y="625" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="1400" y="625" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">브랜드 요소 노출 위치 통일</text>
+      
+
+        <rect x="1344" y="666" width="424" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1372" cy="697" r="14" fill="#5A2E21"/>
+        <text x="1367" y="703" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="1400" y="703" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">인물/오브젝트 비율 안정화</text>
+      
+
+        <rect x="1344" y="744" width="424" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1372" cy="775" r="14" fill="#5A2E21"/>
+        <text x="1367" y="781" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">4</text>
+        <text x="1400" y="781" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">전환 전후 구도 충돌 방지</text>
+      
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>

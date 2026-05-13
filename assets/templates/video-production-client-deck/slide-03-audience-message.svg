@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">03</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">타깃과 커뮤니케이션 전략</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">누구에게 무엇을 어떤 감정선으로 전달할지 먼저 정의합니다</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      <rect x="82" y="318" width="560" height="600" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="120" y="376" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Target Audience</text>
+      
+        <rect x="120" y="420" width="484" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="451" r="14" fill="#5A2E21"/>
+        <text x="143" y="457" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="176" y="457" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">첫 접점에서 브랜드를 처음 만나는 시청자</text>
+      
+
+        <rect x="120" y="498" width="484" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="529" r="14" fill="#5A2E21"/>
+        <text x="143" y="535" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="176" y="535" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">짧은 시간 안에 핵심만 이해하고 싶은 실무 담당자</text>
+      
+
+        <rect x="120" y="576" width="484" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="607" r="14" fill="#5A2E21"/>
+        <text x="143" y="613" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="176" y="613" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">공감 가능한 분위기와 신뢰감 있는 톤을 원하는 클라이언트</text>
+      
+      <rect x="682" y="318" width="524" height="600" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="720" y="376" fill="#FFCC85" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Core Message</text>
+      <text x="720" y="440" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="25" font-weight="700" text-anchor="start">우리는 이 영상을 통해 복잡한 설명</text>
+<text x="720" y="474" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="25" font-weight="700" text-anchor="start">없이도 브랜드의 강점과 분위기를</text>
+<text x="720" y="508" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="25" font-weight="700" text-anchor="start">직관적으로 이해시키는 것을 목표로</text>
+<text x="720" y="542" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="25" font-weight="700" text-anchor="start">합니다.</text>
+      <rect x="720" y="694" width="448" height="162" rx="22" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <text x="752" y="742" fill="#83E1D6" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15" font-weight="700" text-anchor="start">Emotional Path</text>
+      <text x="752" y="782" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">관심 유도 → 몰입 → 신뢰 형성 →</text>
+<text x="752" y="812" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">기억에 남는 마무리</text>
+      <rect x="1246" y="318" width="592" height="600" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="1284" y="376" fill="#F4A7FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Communication Principles</text>
+      
+        <rect x="1284" y="420" width="516" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1312" cy="451" r="14" fill="#5A2E21"/>
+        <text x="1307" y="457" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="1340" y="457" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">말보다 이미지로 먼저 이해되게 구성</text>
+      
+
+        <rect x="1284" y="498" width="516" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1312" cy="529" r="14" fill="#5A2E21"/>
+        <text x="1307" y="535" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="1340" y="535" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">장면마다 하나의 메시지만 남기도록 단순화</text>
+      
+
+        <rect x="1284" y="576" width="516" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1312" cy="607" r="14" fill="#5A2E21"/>
+        <text x="1307" y="613" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="1340" y="613" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">브랜드 무드를 해치지 않는 전환과 속도 설계</text>
+      
+
+        <rect x="1284" y="654" width="516" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1312" cy="685" r="14" fill="#5A2E21"/>
+        <text x="1307" y="691" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">4</text>
+        <text x="1340" y="691" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">마지막에는 행동 유도 혹은 인상 정리로 마감</text>
+      
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>

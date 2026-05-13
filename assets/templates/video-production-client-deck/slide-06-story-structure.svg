@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">06</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">스토리 구조</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">영상의 흐름을 시작, 전개, 전환, 마무리까지 서사적으로 설계합니다</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      <rect x="82" y="336" width="1756" height="462" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <line x1="196" y1="570" x2="1724" y2="570" stroke="#2A2F36" stroke-width="3" />
+      
+        <circle cx="236" cy="570" r="22" fill="#5A2E21"/>
+        <text x="236" y="577" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle">1</text>
+        <text x="188" y="480" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="start">Hook</text>
+      
+
+        <circle cx="608" cy="570" r="22" fill="#5A2E21"/>
+        <text x="608" y="577" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle">2</text>
+        <text x="560" y="480" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="start">Context</text>
+      
+
+        <circle cx="980" cy="570" r="22" fill="#5A2E21"/>
+        <text x="980" y="577" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle">3</text>
+        <text x="932" y="480" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="start">Value</text>
+      
+
+        <circle cx="1352" cy="570" r="22" fill="#5A2E21"/>
+        <text x="1352" y="577" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle">4</text>
+        <text x="1304" y="480" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="start">Immersion</text>
+      
+
+        <circle cx="1724" cy="570" r="22" fill="#5A2E21"/>
+        <text x="1724" y="577" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle">5</text>
+        <text x="1676" y="480" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="start">Payoff</text>
+      
+      <text x="152" y="522" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">첫 1~3초 안에 시선을</text>
+<text x="152" y="550" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">붙잡는 장면</text>
+      <text x="524" y="522" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">무엇을 보는지 바로 이해시키는</text>
+<text x="524" y="550" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">구간</text>
+      <text x="896" y="522" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">브랜드/제품/공간의 강점을</text>
+<text x="896" y="550" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">제시</text>
+      <text x="1268" y="522" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">감정과 분위기를 확장하며 몰입</text>
+<text x="1268" y="550" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">유도</text>
+      <text x="1640" y="522" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">기억에 남는 장면으로 정리 및</text>
+<text x="1640" y="550" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">행동 유도</text>
+      <rect x="82" y="836" width="560" height="110" rx="22" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <rect x="680" y="836" width="560" height="110" rx="22" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <rect x="1278" y="836" width="560" height="110" rx="22" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <text x="116" y="882" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Scene Count</text>
+      <text x="714" y="882" fill="#9EE6B1" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Estimated Runtime</text>
+      <text x="1312" y="882" fill="#F4A7FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Transition Rhythm</text>
+      <text x="116" y="920" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">총 6~12개 장면으로 명확하게 분절</text>
+      <text x="714" y="920" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">15초 / 30초 / 60초 기준으로 유연하게 확장</text>
+      <text x="1312" y="920" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">컷, 디졸브, 매치컷을 혼합해 리듬 설계</text>
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>

@@ -1,0 +1,1223 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026년 미술작품 거래자료 수집 및 관리 대행 용역 제안서</title>
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  @font-face {
+    font-family: "ProposalKorean";
+    src: url("file:///C:/Windows/Fonts/malgun.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ProposalKorean";
+    src: url("file:///C:/Windows/Fonts/malgunbd.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  :root {
+    --ink: #162536;
+    --muted: #5d6b79;
+    --line: #cfd8df;
+    --navy: #17324d;
+    --blue: #28557f;
+    --sand: #f3eee6;
+    --gold: #b88a3b;
+    --mist: #eef3f6;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #d9dde1;
+    color: var(--ink);
+    font-family: "ProposalKorean", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    position: relative;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 15mm 15mm 18mm;
+    background: #fff;
+    page-break-after: always;
+    overflow: hidden;
+  }
+  .page:last-child { page-break-after: auto; }
+  .cover {
+    background:
+      radial-gradient(circle at 80% 10%, rgba(217, 230, 240, 0.7), transparent 30%),
+      radial-gradient(circle at 12% 82%, rgba(184, 138, 59, 0.10), transparent 20%),
+      linear-gradient(135deg, #fbf8f3 0%, #f0f4f7 55%, #eef4fa 100%);
+  }
+  .cover::before, .cover::after {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    opacity: 0.85;
+  }
+  .cover::before {
+    top: -36mm;
+    right: -26mm;
+    width: 92mm;
+    height: 92mm;
+    background: linear-gradient(135deg, rgba(40, 85, 127, 0.14), rgba(184, 138, 59, 0.06));
+  }
+  .cover::after {
+    left: -24mm;
+    bottom: -30mm;
+    width: 76mm;
+    height: 76mm;
+    background: linear-gradient(135deg, rgba(23, 50, 77, 0.10), rgba(40, 85, 127, 0.05));
+  }
+  .cover-box {
+    position: relative;
+    border: 1px solid rgba(23, 50, 77, 0.16);
+    min-height: 263mm;
+    padding: 18mm 16mm 14mm;
+    background: rgba(255, 255, 255, 0.72);
+  }
+  .eyebrow {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid rgba(23, 50, 77, 0.22);
+    font-size: 9pt;
+    letter-spacing: 1.8px;
+    color: var(--navy);
+    background: rgba(255, 255, 255, 0.74);
+  }
+  .cover-title {
+    margin: 18mm 0 4mm;
+    font-size: 24pt;
+    line-height: 1.32;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .cover-subtitle {
+    margin: 0 0 9mm;
+    font-size: 11.5pt;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .cover-hero {
+    display: grid;
+    grid-template-columns: 1.45fr 0.95fr;
+    gap: 8mm;
+    margin-top: 9mm;
+  }
+  .hero-panel, .meta-card, .card, .mini-card, .toc-list, .step, .org-box {
+    border: 1px solid rgba(23, 50, 77, 0.11);
+    background: #fff;
+  }
+  .hero-panel {
+    padding: 7mm;
+    background: linear-gradient(180deg, rgba(238, 243, 246, 0.92), rgba(255, 255, 255, 0.96));
+  }
+  .hero-panel strong, .card strong, .mini-card strong, .org-box strong {
+    display: block;
+    margin-bottom: 1.4mm;
+    color: var(--navy);
+    font-size: 10pt;
+  }
+  .hero-panel p, .card p, .mini-card p, .org-box p { margin: 0; font-size: 9pt; line-height: 1.72; }
+  .badge-row, .pill-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .badge-row { margin-top: 6mm; }
+  .badge, .pill, .section-kicker {
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 8.5pt;
+    font-weight: 700;
+  }
+  .badge {
+    border: 1px solid rgba(23, 50, 77, 0.18);
+    background: rgba(255, 255, 255, 0.86);
+    color: var(--blue);
+  }
+  .meta-grid, .grid-2, .grid-3, .grid-4, .steps, .org-row, .toc {
+    display: grid;
+    gap: 4mm;
+  }
+  .meta-grid, .grid-2, .toc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-3, .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .meta-card { padding: 5mm 5.5mm; background: rgba(255, 255, 255, 0.92); }
+  .meta-card .label { display: block; margin-bottom: 1.5mm; font-size: 8.8pt; color: var(--muted); }
+  .meta-card .value { font-size: 10.1pt; line-height: 1.65; color: var(--ink); font-weight: 600; }
+  .cover-footer {
+    position: absolute;
+    left: 16mm;
+    right: 16mm;
+    bottom: 14mm;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9pt;
+    color: var(--muted);
+  }
+  .section-cover {
+    background:
+      linear-gradient(180deg, rgba(243, 238, 230, 0.95), rgba(255, 255, 255, 1) 58%),
+      linear-gradient(90deg, rgba(23, 50, 77, 0.04), transparent 35%);
+  }
+  .section-kicker {
+    display: inline-block;
+    background: var(--sand);
+    color: var(--navy);
+    letter-spacing: 0.6px;
+  }
+  .section-number {
+    margin: 18mm 0 6mm;
+    font-size: 48pt;
+    line-height: 1;
+    color: rgba(23, 50, 77, 0.16);
+    font-weight: 700;
+  }
+  .section-title {
+    margin: 0;
+    font-size: 26pt;
+    line-height: 1.2;
+    color: var(--navy);
+  }
+  .section-summary, .lead, .quote, .accent-box, .note {
+    line-height: 1.8;
+  }
+  .section-summary {
+    margin-top: 10mm;
+    max-width: 138mm;
+    padding: 6.5mm 7mm;
+    background: rgba(255, 255, 255, 0.82);
+    border-left: 3.2mm solid var(--gold);
+    font-size: 11pt;
+  }
+  .header-band {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8mm;
+    margin-bottom: 5mm;
+  }
+  .page-title {
+    margin: 0;
+    padding-top: 9mm;
+    font-size: 17pt;
+    line-height: 1.3;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .page-subtitle { margin: 2mm 0 0; font-size: 9.2pt; color: var(--muted); line-height: 1.65; }
+  .chapter-mark { margin-top: 7mm; min-width: 24mm; text-align: right; font-size: 10.5pt; color: var(--gold); font-weight: 700; }
+  .lead {
+    margin: 0 0 4.5mm;
+    padding: 5mm 5.5mm;
+    background: linear-gradient(180deg, #f7f9fb, #ffffff);
+    border: 1px solid rgba(23, 50, 77, 0.10);
+    border-left: 3mm solid var(--blue);
+    font-size: 10pt;
+  }
+  h3 { margin: 4mm 0 2.2mm; font-size: 11.3pt; color: var(--navy); line-height: 1.4; }
+  p { margin: 0 0 3mm; font-size: 9.4pt; line-height: 1.72; }
+  ul, ol { margin: 1.5mm 0 3.5mm 5mm; padding: 0; }
+  li { margin: 0 0 1.5mm; font-size: 9.2pt; line-height: 1.62; }
+  .card { padding: 4.5mm 5mm; }
+  .card.soft { background: linear-gradient(180deg, rgba(243, 238, 230, 0.45), rgba(255, 255, 255, 0.95)); }
+  .card.blue { background: linear-gradient(180deg, rgba(238, 243, 246, 0.9), rgba(255, 255, 255, 0.96)); }
+  .mini-card { padding: 3.6mm 4mm; }
+  .cards-stack, .org { display: grid; gap: 3mm; }
+  table { width: 100%; border-collapse: collapse; margin: 1.5mm 0 4mm; }
+  th, td { border: 1px solid var(--line); padding: 2.4mm 2.6mm; vertical-align: top; font-size: 8.7pt; line-height: 1.55; }
+  th { background: var(--mist); color: var(--navy); font-weight: 700; }
+  .tight th, .tight td { padding: 1.9mm 2.1mm; font-size: 8.3pt; }
+  .matrix th:first-child, .matrix td:first-child { background: #f8fafc; font-weight: 700; }
+  .accent-box, .quote, .note { padding: 4mm 5mm; }
+  .accent-box { background: var(--sand); border: 1px solid rgba(184, 138, 59, 0.22); }
+  .quote {
+    background: linear-gradient(180deg, #f6f8fa, #ffffff);
+    border-left: 3mm solid var(--gold);
+    font-size: 10.3pt;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .step { padding: 4mm 4.3mm; }
+  .step .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 8mm;
+    height: 8mm;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-size: 8.3pt;
+    font-weight: 700;
+    margin-bottom: 2mm;
+  }
+  .step strong { display: block; margin-bottom: 1mm; font-size: 9.6pt; color: var(--navy); }
+  .step p { margin: 0; font-size: 8.8pt; }
+  .toc-list { padding: 5mm; }
+  .toc-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4mm;
+    padding: 2mm 0;
+    border-bottom: 1px dashed rgba(23, 50, 77, 0.12);
+    font-size: 9.4pt;
+  }
+  .toc-item:last-child { border-bottom: 0; }
+  .toc-item span:first-child { color: var(--navy); font-weight: 700; }
+  .pill { background: var(--mist); color: var(--navy); font-size: 8.2pt; }
+  .timeline-band {
+    display: grid;
+    grid-template-columns: 18mm repeat(9, 1fr);
+    gap: 1px;
+    border: 1px solid var(--line);
+    background: var(--line);
+    margin-top: 2mm;
+  }
+  .timeline-band div { background: #fff; padding: 2.4mm 1.4mm; font-size: 8pt; text-align: center; }
+  .timeline-band .head { background: var(--mist); font-weight: 700; color: var(--navy); }
+  .bar {
+    background: linear-gradient(90deg, rgba(23, 50, 77, 0.14), rgba(40, 85, 127, 0.18));
+    border: 1px solid rgba(23, 50, 77, 0.10);
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .org-top {
+    text-align: center;
+    padding: 4mm;
+    border: 1px solid rgba(23, 50, 77, 0.12);
+    background: var(--mist);
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 10pt;
+  }
+  .org-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .org-box { padding: 4mm 4.2mm; min-height: 27mm; }
+  .footer {
+    position: absolute;
+    left: 15mm;
+    right: 15mm;
+    bottom: 8mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(23, 50, 77, 0.12);
+    padding-top: 2.2mm;
+    font-size: 7.9pt;
+    color: var(--muted);
+  }
+  .page-no { color: var(--navy); font-weight: 700; }
+  .note {
+    margin-top: 2mm;
+    border: 1px dashed rgba(23, 50, 77, 0.18);
+    background: #fcfcfb;
+    font-size: 8.4pt;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<section class="page cover">
+  <div class="cover-box">
+    <div class="eyebrow">PROPOSAL DOCUMENT / A4 PORTRAIT</div>
+    <h1 class="cover-title">2026년 미술작품 거래자료 수집 및 관리 대행 용역</h1>
+    <p class="cover-subtitle">
+      공공기관 요구 수준의 정확성, 미술시장 데이터 해석 역량, 경매사·플랫폼별 운영 노하우를 결합한
+      유니트미디어의 정성제안서입니다.
+    </p>
+    <div class="badge-row">
+      <span class="badge">국내 12개 경매사 대응</span>
+      <span class="badge">해외 3개 경매사 + 2개 플랫폼</span>
+      <span class="badge">7일 이내 검수·제출 체계</span>
+      <span class="badge">식별 ID 표준화</span>
+      <span class="badge">자료 오류 최소화</span>
+      <span class="badge">시스템 연동 협업</span>
+    </div>
+    <div class="cover-hero">
+      <div class="hero-panel">
+        <strong>제안 방향</strong>
+        <p>
+          본 용역은 단순 수집이 아니라 공개 기간이 짧고 표기 방식이 상이한 미술품 경매 정보를
+          시의성 있게 확보하고, 검수와 변경 반영까지 안정적으로 수행하는 데이터 운영형 과업입니다.
+          유니트미디어는 수집-정규화-검수-등록 협업 전 과정을 한 흐름으로 설계하여,
+          발주처가 즉시 활용 가능한 신뢰도 높은 거래자료를 적기에 제공하겠습니다.
+        </p>
+      </div>
+      <div class="hero-panel">
+        <strong>핵심 약속</strong>
+        <p>
+          국내외 경매 일정 선제 모니터링, 출품·낙찰 정보 및 이미지 병행 확보, 검수표와 보고서 동시 운영,
+          시스템운영사와의 연동 협업, 경매 종료 후 약 7일 이내 검수 완료 및 자료 제출 체계를 확립합니다.
+        </p>
+      </div>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-card"><span class="label">사업명</span><div class="value">2026년 미술작품 거래자료 수집 및 관리 대행 용역</div></div>
+      <div class="meta-card"><span class="label">과업기간</span><div class="value">계약 후 ~ 2026. 12. 18.</div></div>
+      <div class="meta-card"><span class="label">사업예산</span><div class="value">금60,000,000원 (VAT 포함)</div></div>
+      <div class="meta-card"><span class="label">제안사</span><div class="value">유니트미디어</div></div>
+      <div class="meta-card"><span class="label">문서형식</span><div class="value">정성제안서 / A4 세로형 / PDF 제출용</div></div>
+      <div class="meta-card"><span class="label">작성기준</span><div class="value">제안요청서 제공 항목 및 사용자 제공 과업상세 반영</div></div>
+    </div>
+    <div class="cover-footer">
+      <span>UNITMEDIA</span>
+      <span>Art Market Data Collection &amp; Management Proposal</span>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">문서 개요</span>
+      <h2 class="page-title">목차 및 제안 핵심 요약</h2>
+      <p class="page-subtitle">표준 목차 순서를 유지하면서 평가위원이 빠르게 구조를 파악할 수 있도록 재정리했습니다.</p>
+    </div>
+    <div class="chapter-mark">SUMMARY</div>
+  </div>
+  <div class="toc">
+    <div class="toc-list">
+      <div class="toc-item"><span>01. 제안배경 및 개요</span><span>03~06</span></div>
+      <div class="toc-item"><span>02. 제안범위</span><span>07~10</span></div>
+      <div class="toc-item"><span>03. 일반현황</span><span>11~13</span></div>
+      <div class="toc-item"><span>04. 본 사업 수행 강점</span><span>14~18</span></div>
+      <div class="toc-item"><span>05. 추진방법·체계·일정</span><span>19~22</span></div>
+      <div class="toc-item"><span>06. 운영계획 및 인력 투입계획</span><span>23~32</span></div>
+      <div class="toc-item"><span>07. 예상문제점 및 보완대책</span><span>33~35</span></div>
+    </div>
+    <div class="toc-list">
+      <div class="quote">
+        “공개 기간이 짧은 경매자료를 놓치지 않고 확보하고, 오류를 줄이며, 변동사항까지 추적해
+        시스템에 안정적으로 반영하는 것”이 본 과업의 핵심입니다.
+      </div>
+      <div class="cards-stack" style="margin-top:4mm;">
+        <div class="mini-card"><strong>핵심 메시지 1</strong><p>경매 종료 이전부터 일정과 프리뷰 정보를 추적해 자료 미수집 리스크를 선제적으로 줄입니다.</p></div>
+        <div class="mini-card"><strong>핵심 메시지 2</strong><p>작가, 작품, 거래, 이미지, 식별 ID를 하나의 운영 규칙으로 정리해 데이터 활용성을 높입니다.</p></div>
+        <div class="mini-card"><strong>핵심 메시지 3</strong><p>상시 검수와 정기 검수의 이중 구조를 통해 오류와 변경사항을 체계적으로 관리합니다.</p></div>
+        <div class="mini-card"><strong>핵심 메시지 4</strong><p>발주처 및 시스템운영사와의 협업 절차를 명확히 두어 등록 지연과 해석 차이를 최소화합니다.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="accent-box" style="margin-top:4mm;">
+    본 문서는 제출용 초안 성격의 정성제안서입니다. 회사 고유 수치가 필요한 자본규모, 신용등급, 실제 투입 인력의
+    성명·직위 등은 제출 직전 증빙서류와 동일한 값으로 최종 대체할 수 있도록 안전한 문맥으로 구성했습니다.
+  </div>
+  <div class="footer"><span>유니트미디어 제안서</span><span class="page-no">02</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 01</span>
+  <div class="section-number">01</div>
+  <h2 class="section-title">제안배경 및 개요</h2>
+  <div class="section-summary">
+    시의성, 정확성, 관리 용이성이 모두 요구되는 미술시장 거래자료 과업 특성을 분석하고,
+    발주처가 요구하는 목적과 결과물을 어떻게 안정적으로 달성할 것인지 제안의 기본 구조를 제시합니다.
+  </div>
+  <div class="footer"><span>제안배경 및 개요</span><span class="page-no">03</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">01-1 배경</span>
+      <h2 class="page-title">사업 이해와 제안 배경</h2>
+      <p class="page-subtitle">본 과업은 “수집”보다 “적기 확보와 신뢰도 유지”가 더 중요한 데이터 운영 사업입니다.</p>
+    </div>
+    <div class="chapter-mark">01</div>
+  </div>
+  <div class="lead">
+    미술품 경매자료는 경매사별 공시 방식, 표기 언어, 규격 단위, 결과 수정 시점이 서로 다르며,
+    특히 경매 종료 후 일정 기간만 공개되는 자료가 많아 선제적 모니터링과 신속한 확보 체계가 없으면
+    미수집과 오류 누락이 발생하기 쉽습니다. 따라서 본 사업은 미술시장 이해, 데이터 표준화 역량,
+    검수 및 변경 반영 관리 능력을 모두 갖춘 수행 체계가 필수적입니다.
+  </div>
+  <div class="grid-2">
+    <div class="card blue"><strong>발주처 요구사항의 핵심</strong><p>국내 12개 경매사, 해외 3개 경매사 및 2개 플랫폼을 대상으로 2026년 4월부터 12월까지의 출품 및 낙찰 자료를 수집하고, 검수와 변경 반영까지 완료해야 합니다.</p></div>
+    <div class="card soft"><strong>수행사가 풀어야 할 실제 과제</strong><p>경매 일정 파악, 프리뷰 기간 자료 선점, 공개자료 저장, 결과 비교 검수, 이미지 분리 저장, 식별 ID 생성, 시스템 연동 협업까지 하나의 루프로 운영해야 합니다.</p></div>
+  </div>
+  <h3>과업 배경별 리스크</h3>
+  <table class="matrix tight">
+    <tr><th style="width:18%;">배경 요소</th><th style="width:27%;">발생 가능한 문제</th><th style="width:28%;">필요 대응</th><th>제안 방향</th></tr>
+    <tr><td>공개 기간 제한</td><td>종료 후 일정 기간이 지나면 자료 미노출, 이미지 회수</td><td>경매 일정 사전 등록, 프리뷰/종료 직후 즉시 수집</td><td>상시 모니터링 캘린더와 알림 기반 선제 대응</td></tr>
+    <tr><td>표기 형식 상이</td><td>작가명, 작품명, 규격, 재료 표기 불일치</td><td>표준 항목 정의와 정규화 규칙 운영</td><td>국문·영문·원어 병기 원칙과 데이터 사전화</td></tr>
+    <tr><td>결과 수정 빈번</td><td>출품취소, LOT 변경, 낙찰가 보정 반영 지연</td><td>정기 검수와 변경 이력 관리</td><td>수집본-검수본-최종본 3단계 버전관리</td></tr>
+    <tr><td>해외 자료 복잡성</td><td>한국 작가 판별 누락, 플랫폼 라이선스 비용 누락</td><td>작가 필터링 기준과 플랫폼 활용 계획 필요</td><td>Artprice·MutualArt 라이선스 반영 및 한국 작가 분류 체계 운영</td></tr>
+  </table>
+  <div class="footer"><span>제안배경 및 개요</span><span class="page-no">04</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">01-2 개요</span>
+      <h2 class="page-title">과업목적과 제안 개요</h2>
+      <p class="page-subtitle">사용자 제공 과업개요를 기반으로 목적과 제안 구조를 발주처 언어로 재정리했습니다.</p>
+    </div>
+    <div class="chapter-mark">01</div>
+  </div>
+  <table>
+    <tr><th style="width:22%;">항목</th><th>내용</th></tr>
+    <tr><td>과업명</td><td>2026년 미술작품 거래자료 수집 및 관리 대행 용역</td></tr>
+    <tr><td>과업목적</td><td>시의성 있고 안정적인 미술작품 거래자료 수집, 전문 대행업체 활용을 통한 자료 신뢰성 확보 및 자료 관리 프로세스 마련</td></tr>
+    <tr><td>총 사업기간</td><td>계약 후 ~ 2026. 12. 18.</td></tr>
+    <tr><td>총 소요예산</td><td>금60,000,000원 (VAT 포함)</td></tr>
+    <tr><td>입찰·계약 방식</td><td>제한경쟁(총액), 협상에 의한 계약</td></tr>
+  </table>
+  <h3>유니트미디어 제안 개요</h3>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><strong>수집 대상 캘린더화</strong><p>국내외 경매사와 플랫폼의 일정을 사전 등록해 종료 직후 수집 누락을 막습니다.</p></div>
+    <div class="step"><div class="num">2</div><strong>출품·낙찰 동시 확보</strong><p>프리뷰 단계의 출품정보와 종료 후 결과정보를 분리 수집해 변경 이력을 관리합니다.</p></div>
+    <div class="step"><div class="num">3</div><strong>데이터 정규화</strong><p>작가, 작품, 거래, 이미지, 식별 ID를 동일 구조로 정리해 시스템 활용성을 높입니다.</p></div>
+    <div class="step"><div class="num">4</div><strong>다층 검수</strong><p>원천자료 대조, 수집본 검수, 최종 제출 검수의 3단계 체계로 오류를 줄입니다.</p></div>
+    <div class="step"><div class="num">5</div><strong>시스템 협업 등록</strong><p>발주처 및 시스템운영사와 협의한 규칙에 따라 자료 이동 및 등록 단계까지 연계합니다.</p></div>
+    <div class="step"><div class="num">6</div><strong>변경사항 반영</strong><p>출품취소, LOT 변경, 작품정보 보정 등 경매 후 수정사항을 추적해 최신 상태를 유지합니다.</p></div>
+  </div>
+  <div class="accent-box">정확성 우선, 공개자료 선점, 자료-이미지-검수표 동시 관리, 협업 로그 유지, 변경사항 즉시 반영, 보고체계 표준화의 6원칙으로 수행합니다.</div>
+  <div class="footer"><span>제안배경 및 개요</span><span class="page-no">05</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">01-3 목표</span>
+      <h2 class="page-title">수행 목표와 관리 지표</h2>
+      <p class="page-subtitle">정성제안서이지만 운영형 사업에 맞게 달성 기준과 관리 항목을 명확히 제시합니다.</p>
+    </div>
+    <div class="chapter-mark">01</div>
+  </div>
+  <div class="grid-4">
+    <div class="card soft"><strong>목표 1</strong><p>경매 종료 후 약 7일 이내 검수 완료 및 제출 체계 구축</p></div>
+    <div class="card soft"><strong>목표 2</strong><p>국내외 자료 간 표기 차이를 통제하는 표준 운영 규칙 확보</p></div>
+    <div class="card soft"><strong>목표 3</strong><p>자료 오류·누락·중복을 줄이는 검수 프로세스 상시 운영</p></div>
+    <div class="card soft"><strong>목표 4</strong><p>발주처와 시스템운영사가 재작업 없이 활용 가능한 제출 구조 제공</p></div>
+  </div>
+  <h3>핵심 관리지표(KPI)</h3>
+  <table class="tight">
+    <tr><th style="width:20%;">구분</th><th style="width:25%;">관리지표</th><th style="width:22%;">목표 수준</th><th>운영 방식</th></tr>
+    <tr><td>시의성</td><td>경매 종료 후 검수 완료</td><td>약 7일 이내</td><td>캘린더 등록, 알림 운영, 종료 직후 수집 착수</td></tr>
+    <tr><td>정확성</td><td>원천자료 대조 검수</td><td>전 건 검수</td><td>공개자료, 결과자료, 이미지 자료 삼중 대조</td></tr>
+    <tr><td>완전성</td><td>필수 필드 채움률</td><td>관리 기준 충족</td><td>작가·작품·거래·거래처·식별정보 항목별 체크</td></tr>
+    <tr><td>추적성</td><td>변경 이력 확인 가능성</td><td>전 건 관리</td><td>수집본/검수본/최종본 버전 구분 및 검수표 기록</td></tr>
+    <tr><td>협업성</td><td>발주처·운영사 대응 속도</td><td>신속 회신 체계</td><td>PM 단일 창구 운영과 이슈 로그 공유</td></tr>
+  </table>
+  <h3>예정 산출물</h3>
+  <ul>
+    <li>경매별 예정·결과 자료(Excel 형식 기준에 맞춘 데이터 파일)</li>
+    <li>경매별 이미지 자료</li>
+    <li>경매사 홈페이지 공개자료(화면 이미지 등 검수용 증빙)</li>
+    <li>검수표 및 검수 보고서</li>
+    <li>월간 보고자료, 중간보고, 결과보고 자료</li>
+  </ul>
+  <div class="footer"><span>제안배경 및 개요</span><span class="page-no">06</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 02</span>
+  <div class="section-number">02</div>
+  <h2 class="section-title">제안범위</h2>
+  <div class="section-summary">
+    국내·해외 수집 대상, 세부 수집 항목, 자료 형태, 협업 범위를 명확히 구분하여
+    과업 이해도를 높이고 실행계획의 기준선을 제시합니다.
+  </div>
+  <div class="footer"><span>제안범위</span><span class="page-no">07</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">02-1 범위</span>
+      <h2 class="page-title">수집 범위 개요</h2>
+      <p class="page-subtitle">국내 12개 경매사, 해외 3개 경매사, 2개 플랫폼을 아우르는 통합 수집 범위입니다.</p>
+    </div>
+    <div class="chapter-mark">02</div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:16%;">구분</th><th style="width:28%;">대상</th><th style="width:18%;">기간</th><th>주요 내용</th></tr>
+    <tr><td>국내</td><td>12개 경매사</td><td>2026.04 ~ 2026.12</td><td>미술작품 출품 및 낙찰 자료, 작품 이미지, 경매사 공개자료 수집 및 검수</td></tr>
+    <tr><td>해외</td><td>3개 경매사 + 2개 플랫폼</td><td>2026.04 ~ 2026.12</td><td>해외 온·오프라인 경매에 출품된 한국 작가 미술품 자료 수집 및 분류</td></tr>
+    <tr><td>검수</td><td>전 수집 대상</td><td>상시 + 정기</td><td>자료 오류 수정, 낙찰가 및 LOT 변경사항 반영, 검수표 작성</td></tr>
+    <tr><td>등록 협업</td><td>발주처 + 시스템운영사 협의 범위</td><td>상시</td><td>자료 이동, 시스템·프로그램 연동, 최종 등록 기준 협의</td></tr>
+  </table>
+  <div class="grid-2">
+    <div class="card blue"><strong>국내 수집 대상</strong><p>꼬모옥션, 라이즈아트, 마이아트옥션, 서울옥션(블루), 아이옥션, 에이옥션, 칸옥션, 케이옥션, 토탈아트옥션, 헤럴드아트데이, 캐터옥션, 포털아트</p></div>
+    <div class="card soft"><strong>해외 수집 대상</strong><p>소더비, 크리스티, 필립스, Artprice, MutualArt를 대상으로 한국 작가 관련 경매 출품·낙찰 정보 및 이미지를 수집합니다.</p></div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:25%;">플랫폼</th><th style="width:20%;">기간</th><th style="width:20%;">금액</th><th>반영 방식</th></tr>
+    <tr><td>Artprice</td><td>1년</td><td>$439</td><td>예산 내 수집 운영비로 반영</td></tr>
+    <tr><td>MutualArt</td><td>1년</td><td>$369</td><td>예산 내 수집 운영비로 반영</td></tr>
+  </table>
+  <div class="footer"><span>제안범위</span><span class="page-no">08</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">02-2 항목</span>
+      <h2 class="page-title">수집 데이터 항목 정의</h2>
+      <p class="page-subtitle">작가-작품-거래-거래처-식별-이미지의 6개 묶음으로 관리합니다.</p>
+    </div>
+    <div class="chapter-mark">02</div>
+  </div>
+  <table>
+    <tr><th style="width:20%;">영역</th><th>세부 항목</th></tr>
+    <tr><td>작가 정보</td><td>작가명(국문·영문·중문 등 제시된 고유 언어), 호, 생몰정보, 성별</td></tr>
+    <tr><td>작품 정보</td><td>LOT, 작품명(국문·영문·중문 등 제시된 고유 언어), 제작년도, 재료, 에디션, 규격(세로·가로·높이·기타 / cm·inch 병기 가능 형태)</td></tr>
+    <tr><td>거래 정보</td><td>추정가(최하·최고), 낙찰가</td></tr>
+    <tr><td>거래처 정보</td><td>경매사, 날짜, 옥션명, 판매방식(온·오프라인)</td></tr>
+    <tr><td>식별 정보</td><td>동일 작가·동일 작품 구분을 위한 식별 ID(CODE)</td></tr>
+    <tr><td>이미지</td><td>출품 및 낙찰 작품 이미지, 홈페이지 공개자료 화면 이미지</td></tr>
+    <tr><td>기타 정보</td><td>자료 관리, 비교, 분석에 필요하다고 판단되는 추가 메모 및 운영 필드</td></tr>
+  </table>
+  <div class="grid-3">
+    <div class="card"><strong>원어 병기 원칙</strong><p>경매사에서 제공한 고유 언어 표기를 우선 보존하고, 필요한 경우 검색·활용을 위한 보조 표기 필드를 별도 관리합니다.</p></div>
+    <div class="card"><strong>규격 표준화 원칙</strong><p>원문 표기는 보존하되, 시스템 활용성을 높이기 위해 cm 기준 정렬과 inch 보조 기입 여부를 통일합니다.</p></div>
+    <div class="card"><strong>식별성 확보 원칙</strong><p>작가명·작품명·LOT·경매일·경매사 조합 기반의 식별키를 운영해 중복과 혼동을 줄입니다.</p></div>
+  </div>
+  <div class="footer"><span>제안범위</span><span class="page-no">09</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">02-3 협업</span>
+      <h2 class="page-title">과업 범위와 협업 경계</h2>
+      <p class="page-subtitle">발주처, 주관 사업자, 시스템운영사와의 역할 접점을 분명히 두어 실행 혼선을 줄입니다.</p>
+    </div>
+    <div class="chapter-mark">02</div>
+  </div>
+  <div class="org">
+    <div class="org-top">발주처</div>
+    <div class="org-row">
+      <div class="org-box"><strong>1단계. 자료 수집 대상 설정</strong><p>대상 범위 확정, 우선순위 협의, 변동 사항 공유</p></div>
+      <div class="org-box"><strong>2단계. 자료 수집</strong><p>주관 사업자 중심의 자료 확보, 필요 시 발주처 확인</p></div>
+      <div class="org-box"><strong>3단계. 수집 자료 검수</strong><p>검수 기준 확인, 이슈 건 협의</p></div>
+      <div class="org-box"><strong>4~6단계. 이동·연동·등록</strong><p>시스템운영사와 함께 등록 규칙 및 반영 결과 확인</p></div>
+    </div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:18%;">주체</th><th style="width:33%;">주요 역할</th><th>협업 포인트</th></tr>
+    <tr><td>발주처</td><td>기준 확정, 보고 수령, 주요 이슈 판단</td><td>대상 변경, 예외 규칙, 최종 산출물 승인</td></tr>
+    <tr><td>유니트미디어</td><td>자료 수집, 검수, 정리, 보고, 변경 반영</td><td>PM 단일 창구 운영, 이슈 로그 관리</td></tr>
+    <tr><td>시스템운영사</td><td>자료 이동, 프로그램 연동, 등록 규칙 협업</td><td>필드 매핑, 업로드 형식, 반영 확인</td></tr>
+  </table>
+  <div class="note">대상 경매사와 플랫폼은 과업기간 중 변동될 수 있으므로, 유니트미디어는 캘린더 기반 운영체계 안에서 신규 대상 추가와 기존 대상 조정이 가능하도록 범용 표준을 먼저 설계하고 세부 값만 탄력 반영하겠습니다.</div>
+  <div class="footer"><span>제안범위</span><span class="page-no">10</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 03</span>
+  <div class="section-number">03</div>
+  <h2 class="section-title">일반현황</h2>
+  <div class="section-summary">
+    제안사의 설립 목적, 일반현황, 최근 수행 경향, 입찰 대응 자격 보유 현황을 중심으로
+    본 과업 수행 기반을 설명합니다.
+  </div>
+  <div class="footer"><span>일반현황</span><span class="page-no">11</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">03-1 일반현황</span>
+      <h2 class="page-title">유니트미디어 일반현황</h2>
+      <p class="page-subtitle">허위 기재를 피하기 위해 증빙서류와 동일 값으로 치환이 필요한 정량 항목은 제출본 반영 표기로 구성했습니다.</p>
+    </div>
+    <div class="chapter-mark">03</div>
+  </div>
+  <table>
+    <tr><th style="width:22%;">항목</th><th>내용</th></tr>
+    <tr><td>회사명</td><td>유니트미디어</td></tr>
+    <tr><td>설립목적</td><td>공공·문화예술·브랜딩 분야에서 기획, 콘텐츠 제작, 자료운영, 커뮤니케이션 실행을 통합 지원하는 실무형 전문 수행사</td></tr>
+    <tr><td>주요 사업영역</td><td>콘텐츠 기획·제작, 공공홍보, 문화예술 프로젝트 지원, 자료 조사 및 운영, 데이터 기반 보고물 제작</td></tr>
+    <tr><td>자본규모</td><td>[제출본 반영] 법인등기부 및 재무자료 기준 최종 반영</td></tr>
+    <tr><td>기업신용등급</td><td>[제출본 반영] 공공입찰용 신용평가 확인서 기준 최종 반영</td></tr>
+    <tr><td>사업자/등록 자격</td><td>관련 등록·증빙서류 보유 자료 기준 제출 가능</td></tr>
+  </table>
+  <div class="grid-2">
+    <div class="card blue"><strong>설립 목적의 적합성</strong><p>유니트미디어는 단발성 제작보다 기획-수집-정리-보고를 이어주는 운영형 프로젝트에 강점을 가진 구조로, 본 사업처럼 자료의 신뢰도와 후속 활용성이 중요한 과업에 적합합니다.</p></div>
+    <div class="card soft"><strong>사업 성격의 적합성</strong><p>미술작품 거래자료 수집은 조사, 분류, 검수, 커뮤니케이션이 동시에 요구되는 복합형 과업이며, 유니트미디어는 이러한 다중 업무를 PM 중심으로 통합 수행하는 체계를 갖추고 있습니다.</p></div>
+  </div>
+  <div class="note">제출용 최종본에서는 자본금, 설립일, 대표자명, 주소, 신용등급, 사업자번호 등 정량 항목을 제출 증빙과 동일하게 반영하여 문서 일치성을 확보합니다.</div>
+  <div class="footer"><span>일반현황</span><span class="page-no">12</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">03-2 연혁/역량</span>
+      <h2 class="page-title">주요 연혁 및 보유 역량</h2>
+      <p class="page-subtitle">최근 제안 및 수행 축적 흐름을 기준으로 본 사업 적합성을 설명합니다.</p>
+    </div>
+    <div class="chapter-mark">03</div>
+  </div>
+  <div class="grid-3">
+    <div class="card"><strong>2024</strong><p>문화·공공기관 제안 경험을 축적하며 대규모 제안 문서 기획, 발표자료 제작, 세부 운영안 설계 역량을 고도화했습니다.</p></div>
+    <div class="card"><strong>2025</strong><p>지역상권·푸드콘텐츠·브랜딩형 제안과 운영 경험을 통해 현장성 있는 기획과 실무형 운영체계를 축적했습니다.</p></div>
+    <div class="card"><strong>2026</strong><p>공공기관, 병원, 데이터 홍보, 문화기관 제안 경험을 확장하며 조사·콘텐츠·운영을 결합한 프로젝트 대응 폭을 넓혔습니다.</p></div>
+  </div>
+  <div class="pill-row">
+    <span class="pill">공공 제안서 기획 경험</span>
+    <span class="pill">문화예술 분야 문서·콘텐츠 대응</span>
+    <span class="pill">자료조사 및 운영형 프로젝트 경험</span>
+    <span class="pill">보고서/검수표 중심 실무 운영</span>
+    <span class="pill">소수 정예 PM형 팀 운영</span>
+  </div>
+  <table class="tight">
+    <tr><th style="width:22%;">구분</th><th>보유 내용</th></tr>
+    <tr><td>제안 및 문서 역량</td><td>공공기관 수준의 제안 구조화, 일정표·조직표·운영체계 문서화, 결과물 품질 관리</td></tr>
+    <tr><td>콘텐츠/문화 대응</td><td>문화예술·전시·브랜딩 관련 프로젝트 문맥을 이해한 표현력 및 시각 정보 정리 역량</td></tr>
+    <tr><td>실무 운영 역량</td><td>PM 단일 창구 운영, 협업 파트너 조율, 보고 리듬 관리, 마감 중심 작업 통제</td></tr>
+    <tr><td>입찰 대응 기반</td><td>공공입찰용 신용평가 확인서, 중소기업 관련 확인서, 비디오물제작업 신고증 등 제출 대응 자료 보유 기반</td></tr>
+  </table>
+  <div class="footer"><span>일반현황</span><span class="page-no">13</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 04</span>
+  <div class="section-number">04</div>
+  <h2 class="section-title">본 용역사업 수행에 있어서의 강점</h2>
+  <div class="section-summary">
+    미술시장 데이터 이해, 수집 운영 체계, 다층 검수 역량, 시스템 협업 능력이라는
+    네 가지 강점을 중심으로 유니트미디어의 경쟁력을 설명합니다.
+  </div>
+  <div class="footer"><span>수행 강점</span><span class="page-no">14</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">04-1 강점</span>
+      <h2 class="page-title">미술시장 데이터 과업에 대한 이해도</h2>
+      <p class="page-subtitle">본 과업은 일반 조사사업과 다른 미술시장 고유 특성을 이해해야 안정적으로 수행할 수 있습니다.</p>
+    </div>
+    <div class="chapter-mark">04</div>
+  </div>
+  <div class="grid-2">
+    <div class="card blue"><strong>특성 1. 경매 일정 중심 사업</strong><p>수집 시점이 중요한 사업이므로 결과 고시 후 대응이 아니라 프리뷰-경매-종료 후 수정까지 일정을 중심으로 움직여야 합니다.</p></div>
+    <div class="card blue"><strong>특성 2. 표기 언어와 규격의 복잡성</strong><p>작가명과 작품명이 국문·영문·중문 등 다양한 언어로 병기되고, 규격 또한 cm/inch가 혼재하여 표준화 설계가 필수입니다.</p></div>
+    <div class="card soft"><strong>특성 3. 이미지와 텍스트의 동시 관리</strong><p>작품 이미지는 검수와 후속 활용에 모두 중요하므로 데이터 파일과 별개로 구조화된 저장과 연결 규칙이 필요합니다.</p></div>
+    <div class="card soft"><strong>특성 4. 변경사항 상시 발생</strong><p>출품취소, LOT 이동, 작품정보 보정, 낙찰가 수정 등 사후 변경이 발생할 수 있어 최초 수집만으로는 과업이 완료되지 않습니다.</p></div>
+  </div>
+  <p>유니트미디어는 본 과업을 “경매정보를 단순히 긁어오는 작업”으로 보지 않습니다. 원천자료를 해석하고, 필요한 필드로 재정렬하며, 오류를 줄이고, 변경 이력을 관리해 발주처 시스템에 적재 가능한 상태로 만드는 운영형 데이터 과업으로 인식합니다.</p>
+  <div class="accent-box">따라서 본 사업의 성공 기준은 수집량만이 아니라, 적기성·정확성·추적성·활용성을 동시에 만족하는 운영 품질에 있습니다.</div>
+  <div class="footer"><span>수행 강점</span><span class="page-no">15</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">04-2 강점</span>
+      <h2 class="page-title">선제형 자료 수집 운영체계</h2>
+      <p class="page-subtitle">경매 종료 후 대응이 아니라 종료 이전부터 움직이는 구조를 제안합니다.</p>
+    </div>
+    <div class="chapter-mark">04</div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><strong>일정 등록</strong><p>경매사별 개최 일정과 프리뷰 일정을 주간 단위로 업데이트합니다.</p></div>
+    <div class="step"><div class="num">2</div><strong>프리뷰 선수집</strong><p>출품 예정작품 정보와 이미지를 미리 확보하여 결과 비교 기반을 만듭니다.</p></div>
+    <div class="step"><div class="num">3</div><strong>종료 직후 결과 수집</strong><p>낙찰가, 유찰 여부, LOT 변경, 출품취소 등을 빠르게 확인합니다.</p></div>
+    <div class="step"><div class="num">4</div><strong>공개자료 저장</strong><p>검수용 증빙으로 경매사 홈페이지 화면자료를 함께 보관합니다.</p></div>
+    <div class="step"><div class="num">5</div><strong>정규화 및 검수</strong><p>필드별 형식을 정리하고 누락·오류 여부를 교차 검증합니다.</p></div>
+    <div class="step"><div class="num">6</div><strong>최종본 제출</strong><p>경매별 예정·결과 자료, 이미지, 공개자료, 검수표를 묶어 제출합니다.</p></div>
+  </div>
+  <ul>
+    <li>공개자료가 삭제되기 전에 확보할 수 있습니다.</li>
+    <li>프리뷰 정보와 최종 결과의 차이를 비교할 수 있습니다.</li>
+    <li>낙찰가 수정이나 LOT 변경 여부를 추적하기 쉬워집니다.</li>
+    <li>경매 종료 후 7일 이내 완료라는 발주 요구에 대응할 수 있습니다.</li>
+  </ul>
+  <div class="footer"><span>수행 강점</span><span class="page-no">16</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">04-3 강점</span>
+      <h2 class="page-title">오류를 줄이는 다층 검수 구조</h2>
+      <p class="page-subtitle">수집 직후 검수와 정기 검수를 분리해 누락과 후속 변경을 함께 관리합니다.</p>
+    </div>
+    <div class="chapter-mark">04</div>
+  </div>
+  <div class="grid-3">
+    <div class="card blue"><strong>1차 검수. 수집 직후</strong><p>출품예정 정보와 실제 출품 정보, 수집본과 공시본을 비교해 기본 오류를 제거합니다.</p></div>
+    <div class="card blue"><strong>2차 검수. 전달 전</strong><p>전달 자료와 경매사 공개자료, 이미지 파일, 필수 필드 누락 여부를 교차 대조합니다.</p></div>
+    <div class="card blue"><strong>3차 검수. 정기 관리</strong><p>등록 자료와 최종 자료를 다시 비교해 경매 종료 후 보정된 결과를 반영합니다.</p></div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:22%;">검수 항목</th><th style="width:30%;">오류 예시</th><th>대응 방식</th></tr>
+    <tr><td>작가·작품명</td><td>원어 표기 누락, 철자 상이, 제목 일부 누락</td><td>원천 자료 확인 후 고유 언어 우선 저장, 보조 표기 분리</td></tr>
+    <tr><td>규격·재료</td><td>단위 누락, 세로·가로 순서 오류, 재료 축약</td><td>표준 입력 규칙 적용 및 원문 대비 확인</td></tr>
+    <tr><td>거래 정보</td><td>추정가 구간 누락, 낙찰가 보정 반영 누락</td><td>결과 공시 재확인, 정기 검수로 후속 반영</td></tr>
+    <tr><td>LOT·일정</td><td>출품취소, LOT 변경, 경매명 표기 차이</td><td>프리뷰본과 결과본 대조 후 최종본 갱신</td></tr>
+    <tr><td>이미지</td><td>파일 누락, 연결 오류, 작품 불일치</td><td>작품별 파일명 규칙과 제출 전 대조표 운영</td></tr>
+  </table>
+  <div class="footer"><span>수행 강점</span><span class="page-no">17</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">04-4 강점</span>
+      <h2 class="page-title">PM 중심 협업과 시스템 연동 대응력</h2>
+      <p class="page-subtitle">자료 수집업체와 시스템운영사의 간극을 줄이는 것이 프로젝트 성공의 핵심입니다.</p>
+    </div>
+    <div class="chapter-mark">04</div>
+  </div>
+  <div class="lead">
+    유니트미디어는 자료수집, 검수, 보고, 협의가 동시에 일어나는 운영형 사업에서 PM 단일 창구 방식을 적용합니다.
+    이를 통해 발주처는 의사결정 부담을 줄이고, 시스템운영사는 필요한 형식과 필드를 신속히 조정받을 수 있습니다.
+  </div>
+  <div class="grid-2">
+    <div class="card"><strong>발주처 대응 강점</strong><ul><li>착수, 월간, 중간, 결과 보고를 정기 리듬으로 운영</li><li>이슈 발생 시 PM이 즉시 취합·정리 후 의사결정 안건화</li><li>검수표, 변경이력, 제출목록을 문서로 남겨 추적성 확보</li></ul></div>
+    <div class="card"><strong>시스템운영사 대응 강점</strong><ul><li>필드명, 파일 구조, 업로드 형식에 맞춘 데이터 정리</li><li>수집본과 등록본 간 차이를 추적하는 협업 로그 운영</li><li>연동 이슈 발생 시 원천자료 근거와 함께 수정안 제시</li></ul></div>
+  </div>
+  <ul>
+    <li>PM을 중심으로 커뮤니케이션을 단일화합니다.</li>
+    <li>자료 제출과 동시에 검수표·증빙 자료를 함께 제공합니다.</li>
+    <li>예외 케이스는 임의 처리하지 않고 기준안을 작성해 협의합니다.</li>
+    <li>최종본 반영 전 반드시 변경 이력과 반영 여부를 확인합니다.</li>
+  </ul>
+  <div class="footer"><span>수행 강점</span><span class="page-no">18</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 05</span>
+  <div class="section-number">05</div>
+  <h2 class="section-title">과업의 추진방법, 추진체계, 추진일정</h2>
+  <div class="section-summary">
+    자료 수집 대상 설정부터 시스템 연동까지 이어지는 실제 추진 프로세스와
+    월별 일정, 보고 체계, 책임 구조를 명확히 제시합니다.
+  </div>
+  <div class="footer"><span>추진방법·체계·일정</span><span class="page-no">19</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">05-1 추진방법</span>
+      <h2 class="page-title">6단계 추진 프로세스</h2>
+      <p class="page-subtitle">RFP상 추진 과정을 실제 운영 절차로 전환한 유니트미디어의 수행 흐름입니다.</p>
+    </div>
+    <div class="chapter-mark">05</div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><strong>자료 수집 대상 설정</strong><p>국내외 경매사·플랫폼 일정과 우선순위를 등록하고 발주처와 기준을 공유합니다.</p></div>
+    <div class="step"><div class="num">2</div><strong>자료 수집</strong><p>프리뷰 및 결과 고시 시점에 맞춰 출품·낙찰 정보와 이미지를 확보합니다.</p></div>
+    <div class="step"><div class="num">3</div><strong>수집 자료 검수</strong><p>원천자료와 수집자료를 비교하여 누락·오류·중복을 1차 보정합니다.</p></div>
+    <div class="step"><div class="num">4</div><strong>자료 이동</strong><p>최종본과 검수표, 이미지, 공개자료를 제출용 구조로 정리하여 전달합니다.</p></div>
+    <div class="step"><div class="num">5</div><strong>자료 재검수</strong><p>전달 자료와 등록 기준을 다시 대조해 시스템 적재 전 오류를 최소화합니다.</p></div>
+    <div class="step"><div class="num">6</div><strong>시스템 및 프로그램 연동</strong><p>운영사와 협의해 필드 매핑, 등록 확인, 수정 반영을 완료합니다.</p></div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:15%;">단계</th><th style="width:28%;">주관</th><th>핵심 산출물</th></tr>
+    <tr><td>1~2단계</td><td>유니트미디어 PM + 자료수집 담당</td><td>수집 일정표, 대상 리스트, 수집본, 이미지 원본</td></tr>
+    <tr><td>3단계</td><td>유니트미디어 QA 담당</td><td>검수표, 오류 수정 내역, 최종 제출본 초안</td></tr>
+    <tr><td>4~5단계</td><td>유니트미디어 PM + 시스템운영사</td><td>전달본, 필드 매핑 확인, 반영 체크리스트</td></tr>
+    <tr><td>6단계</td><td>시스템운영사 + 유니트미디어</td><td>등록 결과, 변경 반영 확인, 최종 완료 보고</td></tr>
+  </table>
+  <div class="footer"><span>추진방법·체계·일정</span><span class="page-no">20</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">05-2 추진체계</span>
+      <h2 class="page-title">추진체계 및 보고 체계</h2>
+      <p class="page-subtitle">실무자 다수보다 책임과 보고 라인이 명확한 체계를 제안합니다.</p>
+    </div>
+    <div class="chapter-mark">05</div>
+  </div>
+  <div class="org">
+    <div class="org-top">발주처 / 의사결정 및 기준 확정</div>
+    <div class="org-row">
+      <div class="org-box"><strong>PM 총괄</strong><p>전체 일정 관리, 이슈 조정, 보고 총괄, 협업 창구</p></div>
+      <div class="org-box"><strong>국내 수집 리드</strong><p>12개 경매사 일정 관리, 출품·낙찰 자료 확보</p></div>
+      <div class="org-box"><strong>해외 수집 리드</strong><p>3개 경매사 + 2개 플랫폼 운영, 한국 작가 분류</p></div>
+      <div class="org-box"><strong>QA/정리 담당</strong><p>검수표, 최종본 정리, 변경이력 관리, 제출 파일 구성</p></div>
+    </div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:18%;">보고 구분</th><th style="width:18%;">시점</th><th style="width:24%;">주요 내용</th><th>형태</th></tr>
+    <tr><td>착수보고</td><td>계약 후 10일 이내</td><td>운영 기준, 일정, 역할, 보안 및 품질관리 계획</td><td>착수계, 시행계획서, 보고자료</td></tr>
+    <tr><td>월간보고</td><td>월 1회</td><td>수집 실적, 이슈 현황, 다음달 예정 경매</td><td>서면 보고 + 필요 시 회의</td></tr>
+    <tr><td>중간보고</td><td>중간 시점</td><td>누적 실적, 오류 유형, 개선사항, 잔여 계획</td><td>중간보고 자료</td></tr>
+    <tr><td>결과보고</td><td>사업 종료 전</td><td>전체 실적, 주요 성과, 리스크 대응 결과, 향후 제안</td><td>결과보고서</td></tr>
+  </table>
+  <div class="footer"><span>추진방법·체계·일정</span><span class="page-no">21</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">05-3 일정</span>
+      <h2 class="page-title">추진일정</h2>
+      <p class="page-subtitle">사용자 제공 일정을 기준으로 실제 운영 흐름에 맞춘 월별 일정표를 구성했습니다.</p>
+    </div>
+    <div class="chapter-mark">05</div>
+  </div>
+  <div class="timeline-band">
+    <div class="head">구분</div><div class="head">4월</div><div class="head">5월</div><div class="head">6월</div><div class="head">7월</div><div class="head">8월</div><div class="head">9월</div><div class="head">10월</div><div class="head">11월</div><div class="head">12월</div>
+    <div>사업자 선정</div><div class="bar">●</div><div class="bar">●</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div>착수·세팅</div><div class="bar">●</div><div class="bar">●</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div>국내자료 수집</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div>
+    <div>해외자료 수집</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div>
+    <div>상시 검수</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div><div class="bar">●</div>
+    <div>중간보고 준비</div><div></div><div></div><div></div><div class="bar">●</div><div class="bar">●</div><div></div><div></div><div></div><div></div>
+    <div>결과보고 준비</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="bar">●</div><div class="bar">●</div>
+  </div>
+  <div class="grid-3" style="margin-top:4mm;">
+    <div class="card"><strong>4~5월</strong><p>사업자 선정, 착수보고, 운영기준 확정, 라이선스 및 대상 캘린더 세팅</p></div>
+    <div class="card"><strong>6~9월</strong><p>국내외 수집 본격 운영, 정기 검수, 중간보고 및 보완조치</p></div>
+    <div class="card"><strong>10~12월</strong><p>변경사항 마감 관리, 결과보고, 최종 검수 및 등록 완료</p></div>
+  </div>
+  <div class="footer"><span>추진방법·체계·일정</span><span class="page-no">22</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 06</span>
+  <div class="section-number">06</div>
+  <h2 class="section-title">구체적인 운영계획 및 인력 투입계획</h2>
+  <div class="section-summary">
+    국내·해외 자료 수집 방식, 이미지 및 공개자료 확보, 표준화와 검수, 보고와 등록 연계,
+    실제 투입 인력 중심 운영 계획을 세부적으로 설명합니다.
+  </div>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">23</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-1 운영계획</span>
+      <h2 class="page-title">국내 경매사 자료 수집 운영계획</h2>
+      <p class="page-subtitle">국내 12개 경매사의 일정과 공시 구조를 고려한 반복 운영 체계를 제안합니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <div class="lead">
+    국내 경매사는 온·오프라인 경매 병행, 프리뷰 페이지 구조 상이, 결과 공시 시점 차이 등의 특징이 있으므로,
+    동일한 수집 도구가 아니라 경매사별 점검 포인트를 정의한 운영표를 기반으로 관리하겠습니다.
+  </div>
+  <table class="tight">
+    <tr><th style="width:18%;">운영 단계</th><th style="width:26%;">주요 실행</th><th>비고</th></tr>
+    <tr><td>사전 준비</td><td>경매 일정 확인, 프리뷰 시작일 등록, 담당자 체크리스트 업데이트</td><td>변동 가능성이 있는 경매사 일정은 주간 단위 재확인</td></tr>
+    <tr><td>출품 자료 수집</td><td>LOT, 작품명, 작가명, 재료, 규격, 추정가, 이미지 등 선수집</td><td>프리뷰 단계 확보 자료는 결과 비교 기준으로 활용</td></tr>
+    <tr><td>결과 자료 수집</td><td>낙찰가, 유찰 여부, LOT 변경, 출품취소 여부 확인</td><td>종료 직후와 수일 후 재확인으로 수정 반영</td></tr>
+    <tr><td>검수 및 제출</td><td>공시 자료 대조, 검수표 작성, 이미지 정리, 경매별 패키징</td><td>경매 종료 후 약 7일 이내 완료 목표</td></tr>
+  </table>
+  <div class="grid-2">
+    <div class="cards-stack">
+      <div class="mini-card"><strong>서울옥션(Seoul Auction)</strong><p>온·오프라인 경매 모두 대응</p></div>
+      <div class="mini-card"><strong>케이옥션(K Auction)</strong><p>정기·기획 경매 일정 관리</p></div>
+      <div class="mini-card"><strong>꼬모옥션(COMO’s Auction)</strong><p>출품 정보와 결과 비교 운영</p></div>
+      <div class="mini-card"><strong>라이즈아트(Raiz Art)</strong><p>공개 페이지 구조별 체크리스트 적용</p></div>
+      <div class="mini-card"><strong>마이아트옥션(Myart Auction)</strong><p>이미지 및 LOT 기준 정리</p></div>
+      <div class="mini-card"><strong>아이옥션(I Auction)</strong><p>출품·결과 필드 통일 관리</p></div>
+    </div>
+    <div class="cards-stack">
+      <div class="mini-card"><strong>에이옥션(A Auction)</strong><p>세부 작품 정보 정규화</p></div>
+      <div class="mini-card"><strong>칸옥션(Kan Auction)</strong><p>공개자료 화면 저장 병행</p></div>
+      <div class="mini-card"><strong>토탈아트옥션(Total Art Auction)</strong><p>이미지 파일 정리 규칙 적용</p></div>
+      <div class="mini-card"><strong>헤럴드아트데이/헤럴드옥션</strong><p>명칭 차이 포함 관리</p></div>
+      <div class="mini-card"><strong>캐터옥션(KATA Auction)</strong><p>LOT 변경 및 결과 수정 추적</p></div>
+      <div class="mini-card"><strong>포털아트(Portal Art)</strong><p>발주처 기준에 맞춘 필드 매핑</p></div>
+    </div>
+  </div>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">24</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-2 운영계획</span>
+      <h2 class="page-title">해외 경매사 및 플랫폼 자료 수집 운영계획</h2>
+      <p class="page-subtitle">한국 작가 판별 정확도와 해외 경매자료 확보 시점을 동시에 관리합니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:18%;">대상</th><th style="width:24%;">운영 포인트</th><th>제안 방식</th></tr>
+    <tr><td>소더비</td><td>세일 단위 구조 파악, 한국 작가 포함 여부 판별</td><td>세일 기준 전체 수집 후 한국 작가 필터링 우선</td></tr>
+    <tr><td>크리스티</td><td>세일별 Lot 정보와 결과 정보 연결</td><td>작가명/작품명 병기와 원문 보존 원칙 적용</td></tr>
+    <tr><td>필립스</td><td>결과 공시 시점과 이미지 확보 시점 분리 관리</td><td>프리뷰 이미지 확보 후 결과 반영 재확인</td></tr>
+    <tr><td>Artprice</td><td>라이선스 기반 보조 검증 및 작가 검색</td><td>원천 경매자료와 교차 대조용으로 활용</td></tr>
+    <tr><td>MutualArt</td><td>한국 작가 경매 참여 이력 추적 및 누락 보완</td><td>보조 검색 채널로 활용하여 미수집 리스크 최소화</td></tr>
+  </table>
+  <div class="grid-2">
+    <div class="card blue"><strong>제안 방식 A. 세일 전체 수집 후 한국 작가 분류</strong><p>세일 단위로 정보를 확보한 뒤 한국 작가를 선별하는 방식입니다. 누락 가능성이 낮고 검증 근거가 명확해 본 사업에 가장 안정적입니다.</p></div>
+    <div class="card soft"><strong>제안 방식 B. 한국 작가만 선별 수집</strong><p>효율성은 있으나 대상 판별 기준이 선행되어야 하며, 신규 작가나 표기 변형이 있는 경우 누락 가능성이 있어 보조 방식으로 권장합니다.</p></div>
+  </div>
+  <div class="accent-box">권장안 : 해외 경매사는 세일 전체를 기준으로 확인하고 한국 작가 자료를 분류하는 방식을 기본으로 하되, 플랫폼 검색 결과를 교차 검증 자료로 활용해 누락을 최소화하겠습니다.</div>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">25</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-3 운영계획</span>
+      <h2 class="page-title">이미지 및 홈페이지 공개자료 수집 계획</h2>
+      <p class="page-subtitle">데이터 정확도뿐 아니라 검수용 증빙 자료도 함께 관리합니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <div class="grid-3">
+    <div class="card"><strong>경매별 예정·결과 자료</strong><p>Excel 제출 기준에 맞춘 구조로 정리하여 경매 단위 파일로 구분합니다.</p></div>
+    <div class="card"><strong>경매별 이미지 자료</strong><p>작품 이미지 원본을 경매명/일자/LOT 규칙에 따라 저장합니다.</p></div>
+    <div class="card"><strong>홈페이지 공개자료</strong><p>화면 이미지와 공개 페이지 캡처를 검수용 증빙 자료로 수집합니다.</p></div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:24%;">폴더</th><th style="width:30%;">예시 파일</th><th>용도</th></tr>
+    <tr><td>/excel</td><td>20260615_KAuction_result.xlsx</td><td>출품·낙찰 데이터 본문</td></tr>
+    <tr><td>/images</td><td>20260615_KAuction_LOT0234.jpg</td><td>작품 이미지 원본</td></tr>
+    <tr><td>/capture</td><td>20260615_KAuction_result_page01.png</td><td>홈페이지 공개자료 증빙</td></tr>
+    <tr><td>/qa</td><td>20260615_KAuction_qa_checklist.xlsx</td><td>검수표 및 오류 수정 내역</td></tr>
+  </table>
+  <ul>
+    <li>경매 종료일로부터 7일 이내 검수 완료본과 증빙 자료를 함께 제출합니다.</li>
+    <li>이미지 파일과 데이터 파일 간 연결 키를 동일하게 유지합니다.</li>
+    <li>홈페이지 공개자료는 검수와 이의 대응의 근거자료로 별도 보관합니다.</li>
+  </ul>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">26</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-4 운영계획</span>
+      <h2 class="page-title">데이터 표준화 및 식별 ID 운영계획</h2>
+      <p class="page-subtitle">발주처와 시스템운영사가 후속 활용하기 쉬운 형태로 표준화를 설계합니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <div class="grid-2">
+    <div class="card blue">
+      <strong>표준화 범위</strong>
+      <ul>
+        <li>작가명: 고유 언어 우선 + 검색용 보조 표기</li>
+        <li>작품명: 원문 보존 + 공백·특수문자 정리 기준</li>
+        <li>재료: 빈출 표현 표준화 사전 운영</li>
+        <li>규격: 세로·가로·높이 구분과 단위 통일</li>
+      </ul>
+    </div>
+    <div class="card soft">
+      <strong>식별 ID 기본 구조(예시)</strong>
+      <p>UM-2026-DOM-SA-20260615-LOT0234 형식으로 연도/국내외/경매사/일자/LOT를 조합한 임시 규칙을 운영하고, 최종 구조는 발주처 및 시스템운영사 협의 후 확정합니다.</p>
+    </div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:22%;">구분</th><th style="width:34%;">혼동 가능 사례</th><th>대응 기준</th></tr>
+    <tr><td>동일 작가명</td><td>국문 표기 동일, 영문 표기 상이</td><td>생몰정보, 원문 표기, 거래처 정보 동시 관리</td></tr>
+    <tr><td>동일 작품명</td><td>동명 작품 다수 존재</td><td>제작년도, 규격, LOT, 거래일자 조합으로 구분</td></tr>
+    <tr><td>에디션 작품</td><td>동일 제목/규격이나 edition 번호 상이</td><td>에디션 값 별도 필드화</td></tr>
+    <tr><td>재출품</td><td>다른 경매에서 동일 작품 재등장</td><td>식별 ID와 거래 이력 연계로 관리</td></tr>
+  </table>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">27</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-5 운영계획</span>
+      <h2 class="page-title">자료 검수, 수정 반영, 등록 연계 계획</h2>
+      <p class="page-subtitle">‘수집 완료’가 아니라 ‘등록 가능한 상태 완성’까지를 과업 범위로 봅니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:17%;">주기</th><th style="width:33%;">검수 방법</th><th>운영 포인트</th></tr>
+    <tr><td>상시</td><td>경매결과 고시 직후 수집자료와 공시자료 비교</td><td>예정작품-실제출품-낙찰결과 간 차이 즉시 기록</td></tr>
+    <tr><td>전달 전</td><td>전달 자료와 경매사 홈페이지 공개자료 비교</td><td>검수표와 최종 제출본 일치 여부 확인</td></tr>
+    <tr><td>정기</td><td>등록 자료와 최종 자료 비교, 수정사항 반영</td><td>경매 종료 후 약 7일 이내 검수·등록 완료 기준 관리</td></tr>
+  </table>
+  <div class="grid-3">
+    <div class="card"><strong>사전 대응</strong><p>일정표 운영, 프리뷰 단계 선수집, 담당자 알림 체계로 미수집 가능성을 낮춥니다.</p></div>
+    <div class="card"><strong>즉시 대응</strong><p>결과 고시 직후 우선 확보, 플랫폼 검색과 공개자료 캡처를 병행합니다.</p></div>
+    <div class="card"><strong>사후 대응</strong><p>누락 발생 시 원인 기록, 보완 경로 확보, 발주처에 즉시 보고 후 시정계획을 제시합니다.</p></div>
+  </div>
+  <ul>
+    <li>출품취소, LOT 변경, 작품정보 변경, 낙찰가 보정은 별도 변경 이력으로 관리합니다.</li>
+    <li>변경사항은 원천 근거 화면 또는 결과자료와 함께 검수표에 표기합니다.</li>
+    <li>발주처 및 시스템운영사와 합의한 반영 주기 내 등록을 완료합니다.</li>
+  </ul>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">28</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 06-2</span>
+  <div class="section-number">06</div>
+  <h2 class="section-title">실제 투입 인력 계획</h2>
+  <div class="section-summary">
+    실제 본 용역에 투입되는 인력만 기재한다는 기준을 반영해,
+    핵심 역할 중심의 소수 정예 운영 체계를 제안합니다.
+  </div>
+  <div class="footer"><span>실제 투입 인력 계획</span><span class="page-no">29</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-6 인력계획</span>
+      <h2 class="page-title">투입 조직도 및 투입 원칙</h2>
+      <p class="page-subtitle">실무 책임이 명확한 5인 체계를 기준안으로 제안합니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <div class="org">
+    <div class="org-top">사업책임자 / PM (실제 투입 확정인력 반영)</div>
+    <div class="org-row">
+      <div class="org-box"><strong>국내 수집 담당</strong><p>국내 12개 경매사 일정·자료·이미지 수집</p></div>
+      <div class="org-box"><strong>해외 수집 담당</strong><p>해외 경매사·플랫폼 운영, 한국 작가 분류</p></div>
+      <div class="org-box"><strong>검수/정규화 담당</strong><p>필드 정리, 오류 수정, 식별 ID 관리</p></div>
+      <div class="org-box"><strong>자료정리/보고 담당</strong><p>검수표, 결과보고, 제출 파일 패키징</p></div>
+    </div>
+  </div>
+  <ul>
+    <li>제안 인력은 실제 본 과업에 투입되는 인력만으로 구성합니다.</li>
+    <li>PM을 포함한 핵심 인력은 과업기간 내 지속 참여를 원칙으로 합니다.</li>
+    <li>역할별 책임을 명확히 구분하되, 마감 시점에는 상호 백업이 가능하도록 설계합니다.</li>
+    <li>인력 교체·증원·감원 필요 시 발주처와 사전 협의합니다.</li>
+  </ul>
+  <table class="tight">
+    <tr><th style="width:20%;">역할</th><th style="width:18%;">권장 투입률</th><th>주요 업무</th></tr>
+    <tr><td>PM</td><td>50% 이상</td><td>총괄관리, 보고, 이슈 대응, 품질 기준 통제</td></tr>
+    <tr><td>국내 수집 담당</td><td>상시</td><td>국내 경매사 일정관리, 출품·결과·이미지 확보</td></tr>
+    <tr><td>해외 수집 담당</td><td>상시</td><td>해외 세일 추적, 한국 작가 분류, 플랫폼 교차 검증</td></tr>
+    <tr><td>검수/정규화 담당</td><td>상시</td><td>오류 검수, 표준화, ID 부여, 변경이력 관리</td></tr>
+    <tr><td>자료정리/보고 담당</td><td>상시</td><td>파일 정리, 검수표 작성, 월간/중간/결과 보고자료 작성</td></tr>
+  </table>
+  <div class="note">실제 성명, 직위, 경력연수, 최종학력, 참여율 등은 제출본에서 증빙서류와 동일하게 최종 반영하면 바로 사용할 수 있도록 표 구조를 설계했습니다.</div>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">30</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-7 인력계획</span>
+      <h2 class="page-title">역할별 상세 업무 분장</h2>
+      <p class="page-subtitle">실행 단계별로 누가 무엇을 책임지는지 명확히 제시합니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:18%;">구분</th><th style="width:27%;">주요 책임</th><th style="width:22%;">필수 역량</th><th>비고</th></tr>
+    <tr><td>PM</td><td>전체 일정·품질·보고·협업 총괄</td><td>공공사업 운영 경험, 일정 통제, 문서화 역량</td><td>발주처 단일 창구 역할</td></tr>
+    <tr><td>국내 수집 담당</td><td>경매 일정 확인, 출품·낙찰 자료 및 이미지 확보</td><td>경매사별 페이지 구조 파악, 자료 민첩 수집</td><td>국내 12개 경매사 전담</td></tr>
+    <tr><td>해외 수집 담당</td><td>해외 세일 추적, 한국 작가 판별, 플랫폼 활용</td><td>영문 자료 이해, 한국 작가 분류, 데이터 정리</td><td>해외 3개 경매사 + 2개 플랫폼 전담</td></tr>
+    <tr><td>검수/정규화 담당</td><td>오류 수정, 표준화, ID 부여, 변경 반영</td><td>정합성 검토, 세부 필드 관리, 규칙화 능력</td><td>검수표 작성 주관</td></tr>
+    <tr><td>자료정리/보고 담당</td><td>파일 패키징, 보고자료, 제출 체크리스트 관리</td><td>문서 정리, 폴더 구조 관리, 보고서 작성</td><td>시스템운영사 전달 구조 정리</td></tr>
+  </table>
+  <div class="grid-2">
+    <div class="card blue"><strong>전담성</strong><p>본 과업의 일정과 마감에 맞춰 실제 참여인력만 운영하고, PM이 전체 마감 리듬을 통제합니다.</p></div>
+    <div class="card soft"><strong>백업성</strong><p>국내/해외/검수 담당 간 핵심 체크리스트를 공유해 특정 경매 집중 시점에도 업무 연속성을 확보합니다.</p></div>
+  </div>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">31</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">06-8 운영지원</span>
+      <h2 class="page-title">커뮤니케이션 및 보고 운영계획</h2>
+      <p class="page-subtitle">자료 수집만 잘해도 소통이 불안정하면 운영 품질이 떨어지므로 보고 리듬을 고정합니다.</p>
+    </div>
+    <div class="chapter-mark">06</div>
+  </div>
+  <div class="grid-3">
+    <div class="card"><strong>정기 공유</strong><p>월간 보고를 기본으로 하며, 경매 집중 기간에는 필요 시 주간 이슈 공유를 병행합니다.</p></div>
+    <div class="card"><strong>이슈 대응</strong><p>누락, 사이트 구조 변경, 라이선스 접근 문제 등은 PM이 즉시 취합해 대응 방안을 보고합니다.</p></div>
+    <div class="card"><strong>결과 정리</strong><p>중간보고와 결과보고에는 누적 실적, 오류 유형, 보완 결과, 잔여 리스크를 함께 정리합니다.</p></div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:20%;">보고물</th><th style="width:26%;">핵심 항목</th><th>비고</th></tr>
+    <tr><td>착수보고</td><td>운영기준, 역할, 일정, 보안·품질계획</td><td>계약 후 10일 이내</td></tr>
+    <tr><td>월간보고</td><td>수집 실적, 검수 현황, 이슈 및 차월 예정</td><td>월 1회 기본</td></tr>
+    <tr><td>중간보고</td><td>누적 실적, 오류 유형, 보완 사항, 일정 점검</td><td>중반 이후 시행</td></tr>
+    <tr><td>결과보고</td><td>전체 실적, 운영성과, 문제점 및 향후 개선</td><td>종료 전 최종 제출</td></tr>
+  </table>
+  <div class="accent-box">유니트미디어는 결과만 보고하는 방식이 아니라, 진행 중인 위험과 판단 필요 사항을 조기에 공유하는 운영형 커뮤니케이션 방식을 적용하겠습니다.</div>
+  <div class="footer"><span>운영계획 및 인력계획</span><span class="page-no">32</span></div>
+</section>
+
+<section class="page section-cover">
+  <span class="section-kicker">SECTION 07</span>
+  <div class="section-number">07</div>
+  <h2 class="section-title">용역 과정에서 예상되는 문제점 및 보완대책</h2>
+  <div class="section-summary">
+    실제 수행 과정에서 높은 확률로 마주칠 수 있는 문제를 먼저 정의하고,
+    예방과 대응이 모두 가능한 현실적인 보완대책을 제시합니다.
+  </div>
+  <div class="footer"><span>예상문제점 및 보완대책</span><span class="page-no">33</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">07-1 리스크</span>
+      <h2 class="page-title">예상 문제점과 보완대책</h2>
+      <p class="page-subtitle">고위험 상황을 중심으로 예방-대응-복구의 3단계 관점으로 정리했습니다.</p>
+    </div>
+    <div class="chapter-mark">07</div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:18%;">예상 문제점</th><th style="width:28%;">영향</th><th style="width:24%;">예방 대책</th><th>보완 대책</th></tr>
+    <tr><td>경매자료 조기 삭제</td><td>출품·이미지 자료 미수집 가능성</td><td>사전 일정 등록, 프리뷰 단계 선수집</td><td>플랫폼 교차검증 및 기확보 공개자료로 보완</td></tr>
+    <tr><td>경매 일정 변동</td><td>수집 일정 차질, 담당자 대응 지연</td><td>주간 일정 재확인, 변동 로그 관리</td><td>PM이 즉시 일정 재배치 후 발주처 공유</td></tr>
+    <tr><td>표기 방식 상이</td><td>작가·작품 데이터 정합성 저하</td><td>표준 사전 및 입력 규칙 운영</td><td>예외 케이스 별도 관리 후 기준안 협의</td></tr>
+    <tr><td>낙찰가·LOT 변경</td><td>등록 자료와 실제 결과 불일치</td><td>정기 검수 루틴 운영</td><td>변경이력표로 반영 여부 추적</td></tr>
+    <tr><td>해외 한국 작가 판별 누락</td><td>대상 자료 누락</td><td>세일 전체 확인 + 플랫폼 교차 확인</td><td>작가명 사전과 이전 이력 축적</td></tr>
+    <tr><td>이미지-데이터 연결 오류</td><td>검수 불가, 등록 오류</td><td>파일명 규칙과 키값 일치 관리</td><td>제출 전 연결 대조표 재검수</td></tr>
+    <tr><td>시스템 등록 기준 변경</td><td>재작업 발생</td><td>초기 필드 매핑 협의</td><td>버전관리로 변경 범위 최소화</td></tr>
+    <tr><td>특정 시기 업무 집중</td><td>마감 지연 가능성</td><td>역할 분담과 백업 체계 운영</td><td>우선순위 재조정 및 집중 대응 인력 투입</td></tr>
+  </table>
+  <div class="footer"><span>예상문제점 및 보완대책</span><span class="page-no">34</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">07-2 마무리</span>
+      <h2 class="page-title">보안, 품질, 책임 수행 방침 및 결론</h2>
+      <p class="page-subtitle">공공 용역 수행사로서의 기본 책임과 본 과업에 대한 약속을 함께 제시합니다.</p>
+    </div>
+    <div class="chapter-mark">07</div>
+  </div>
+  <div class="grid-2">
+    <div class="card blue"><strong>보안 및 준수 방침</strong><ul><li>과업 수행 중 취득한 자료와 파일은 과업 목적 범위 내에서만 사용합니다.</li><li>발주처 지침에 따른 보안서약, 비밀유지, 개인정보 관련 요구를 성실히 준수합니다.</li><li>저작권, 초상권, 플랫폼 이용조건 등 외부 권리를 침해하지 않도록 관리합니다.</li></ul></div>
+    <div class="card soft"><strong>품질 및 책임 수행 방침</strong><ul><li>정확하지 않은 자료는 제출량보다 품질 기준을 우선해 검수 후 제출합니다.</li><li>문제 발생 시 원인, 영향, 조치계획을 신속히 보고합니다.</li><li>종료 직전이 아닌 과업 전 기간에 걸쳐 품질을 누적 관리합니다.</li></ul></div>
+  </div>
+  <div class="quote" style="margin-top:4mm;">유니트미디어는 본 과업을 “한 번에 많이 수집하는 일”이 아니라 “놓치지 않고, 틀리지 않게, 바뀐 내용까지 끝까지 관리하는 일”로 수행하겠습니다.</div>
+  <p style="margin-top:4mm;">본 제안은 사용자가 제공한 제안요청서 핵심 내용과 세부 과업 범위를 기준으로, 평가위원이 확인하고자 하는 사업 이해도, 수행 강점, 운영 구체성, 위험 대응 역량이 균형 있게 드러나도록 구성했습니다. 유니트미디어는 미술시장 자료의 특수성을 이해하고, 공공사업이 요구하는 문서화·검수·협업 수준에 맞춰 안정적인 거래자료 수집 및 관리 대행을 수행하겠습니다.</p>
+  <div class="note">최종 제출본 반영 권장 항목 : 대표자명, 설립일, 자본금, 신용등급, 실제 투입 인력 성명/직위/경력, 사업자번호, 회사 주소, 연락처.</div>
+  <div class="footer"><span>예상문제점 및 보완대책</span><span class="page-no">35</span></div>
+</section>
+
+<section class="page">
+  <div class="header-band">
+    <div>
+      <span class="section-kicker">APPENDIX</span>
+      <h2 class="page-title">제출 직전 최종 점검 메모</h2>
+      <p class="page-subtitle">바로 제출용으로 마무리할 때 치환 또는 추가하면 좋은 항목을 정리했습니다.</p>
+    </div>
+    <div class="chapter-mark">A</div>
+  </div>
+  <table class="tight">
+    <tr><th style="width:24%;">항목</th><th style="width:28%;">현재 상태</th><th>최종 반영 권장 내용</th></tr>
+    <tr><td>회사 정량 정보</td><td>안전 문맥으로 기재</td><td>설립일, 자본금, 주소, 대표자명, 신용등급 수치 반영</td></tr>
+    <tr><td>실제 투입 인력</td><td>역할 중심 구조 제시</td><td>성명, 직위, 경력, 참여율, 증빙 연계표 삽입</td></tr>
+    <tr><td>레퍼런스</td><td>최근 수행 경향 중심 정리</td><td>낙찰 실적 또는 수행확인 가능한 포트폴리오 추가</td></tr>
+    <tr><td>표지 정보</td><td>기본값 반영</td><td>PM 연락처, 제출일, 회사 로고 삽입</td></tr>
+    <tr><td>별첨 자료</td><td>본 문서 외 별첨 미포함</td><td>신용평가 확인서, 비디오물제작업 신고증, 중소기업 확인서 등 첨부</td></tr>
+  </table>
+  <div class="accent-box">본 PDF는 30페이지를 초과하는 A4 세로형 정성제안서 초안으로 바로 검토·수정 가능한 형태입니다. 필요하면 다음 단계에서 회사 실정보, 실투입 인력명, 표지 로고, 색상 보정, 발표용 요약본까지 연속 제작할 수 있습니다.</div>
+  <div class="footer"><span>부록</span><span class="page-no">36</span></div>
+</section>
+
+</body>
+</html>

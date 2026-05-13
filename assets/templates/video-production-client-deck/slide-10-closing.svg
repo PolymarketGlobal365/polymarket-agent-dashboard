@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">10</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">기대 효과 및 다음 단계</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">이 제안이 실제로 어떤 결과를 만들고, 다음 합의는 무엇인지 명확히 마무리합니다</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      <rect x="82" y="318" width="770" height="600" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="126" y="382" fill="#F4A7FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Expected Outcome</text>
+      <text x="126" y="458" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="28" font-weight="700" text-anchor="start">완성된 영상은 단순한 소개 영상을 넘어,</text>
+<text x="126" y="494" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="28" font-weight="700" text-anchor="start">브랜드의 결을 보여주고 클라이언트가</text>
+<text x="126" y="530" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="28" font-weight="700" text-anchor="start">원하는 인상을 빠르게 형성하는 역할을</text>
+<text x="126" y="566" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="28" font-weight="700" text-anchor="start">하게 됩니다.</text>
+      <rect x="126" y="700" width="682" height="162" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <text x="158" y="746" fill="#FFCC85" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15" font-weight="700" text-anchor="start">Best For</text>
+      <text x="158" y="786" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">브랜드 필름 / 공간 소개 / 행사 티저 /</text>
+<text x="158" y="816" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">제품 프로모션 / 투자 및 소개용 영상</text>
+      
+    <rect x="900" y="318" width="938" height="362" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2" stroke-dasharray="12 10" />
+    <text x="1369" y="491" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Final Hero Still / Ending Frame</text>
+    <text x="1369" y="525" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="500" text-anchor="middle">replace with still / frame / moodboard</text>
+  
+      <rect x="900" y="718" width="938" height="200" rx="26" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="940" y="770" fill="#83E1D6" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Next Step</text>
+      
+        <rect x="940" y="808" width="860" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="968" cy="839" r="14" fill="#5A2E21"/>
+        <text x="963" y="845" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="996" y="845" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">핵심 메시지 1문장 확정</text>
+      
+
+        <rect x="940" y="886" width="860" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="968" cy="917" r="14" fill="#5A2E21"/>
+        <text x="963" y="923" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="996" y="923" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">레퍼런스와 금지 요소 공유</text>
+      
+
+        <rect x="940" y="964" width="860" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="968" cy="995" r="14" fill="#5A2E21"/>
+        <text x="963" y="1001" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="996" y="1001" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">우선 제작 포맷과 러닝타임 결정</text>
+      
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>

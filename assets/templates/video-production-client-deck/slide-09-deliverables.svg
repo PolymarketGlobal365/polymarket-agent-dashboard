@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">09</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">산출물 및 운영 기준</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">무엇을 어떤 형태로 전달하는지, 수정과 납품 기준은 어떻게 되는지 정리합니다</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      <rect x="82" y="318" width="580" height="620" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="120" y="376" fill="#FFCC85" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Deliverables</text>
+      
+        <rect x="120" y="418" width="504" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="449" r="14" fill="#5A2E21"/>
+        <text x="143" y="455" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="176" y="455" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">메인 영상 1종</text>
+      
+
+        <rect x="120" y="496" width="504" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="527" r="14" fill="#5A2E21"/>
+        <text x="143" y="533" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="176" y="533" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">버전별 리사이즈 또는 숏폼 컷다운</text>
+      
+
+        <rect x="120" y="574" width="504" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="605" r="14" fill="#5A2E21"/>
+        <text x="143" y="611" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="176" y="611" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">썸네일/대표 프레임</text>
+      
+
+        <rect x="120" y="652" width="504" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="683" r="14" fill="#5A2E21"/>
+        <text x="143" y="689" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">4</text>
+        <text x="176" y="689" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">자막 포함본 및 무자막본</text>
+      
+
+        <rect x="120" y="730" width="504" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="148" cy="761" r="14" fill="#5A2E21"/>
+        <text x="143" y="767" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">5</text>
+        <text x="176" y="767" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">필요 시 스틸 이미지 추출본</text>
+      
+      <rect x="710" y="318" width="544" height="620" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="748" y="376" fill="#9EE6B1" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Revision Policy</text>
+      
+        <rect x="748" y="418" width="468" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="776" cy="449" r="14" fill="#5A2E21"/>
+        <text x="771" y="455" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="804" y="455" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">기획 확정 후 본 제작 진행</text>
+      
+
+        <rect x="748" y="496" width="468" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="776" cy="527" r="14" fill="#5A2E21"/>
+        <text x="771" y="533" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="804" y="533" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">중간 확인 단계에서 방향성 점검</text>
+      
+
+        <rect x="748" y="574" width="468" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="776" cy="605" r="14" fill="#5A2E21"/>
+        <text x="771" y="611" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="804" y="611" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">수정은 라운드 기준으로 관리</text>
+      
+
+        <rect x="748" y="652" width="468" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="776" cy="683" r="14" fill="#5A2E21"/>
+        <text x="771" y="689" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">4</text>
+        <text x="804" y="689" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">최종 출력 전 체크리스트 검수</text>
+      
+      <rect x="1302" y="318" width="536" height="620" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="1340" y="376" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Delivery Format</text>
+      
+        <rect x="1340" y="418" width="460" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1368" cy="449" r="14" fill="#5A2E21"/>
+        <text x="1363" y="455" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="1396" y="455" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">16:9 / 9:16 / 1:1 등 목적별 출력</text>
+      
+
+        <rect x="1340" y="496" width="460" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1368" cy="527" r="14" fill="#5A2E21"/>
+        <text x="1363" y="533" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="1396" y="533" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">H.264 MP4 기본 납품</text>
+      
+
+        <rect x="1340" y="574" width="460" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1368" cy="605" r="14" fill="#5A2E21"/>
+        <text x="1363" y="611" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="1396" y="611" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">플랫폼 업로드용 권장 스펙 제공</text>
+      
+
+        <rect x="1340" y="652" width="460" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="1368" cy="683" r="14" fill="#5A2E21"/>
+        <text x="1363" y="689" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">4</text>
+        <text x="1396" y="689" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">필요 시 피그마/PDF 설명자료 병행</text>
+      
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>

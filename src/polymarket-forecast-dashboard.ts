@@ -34,7 +34,8 @@ async function main(): Promise<void> {
   const config = await loadConfig(args.configFile);
   const snapshot = await buildRewardTradingSnapshot();
   const model = buildForecastDashboardViewModel(snapshot, config);
-  const html = renderForecastDashboardHtml(model);
+  const rawHtml = renderForecastDashboardHtml(model);
+  const html = await inlineDashboardAssets(rawHtml);
 
   await ensureDir(path.dirname(args.outputFile));
   await fs.writeFile(args.outputFile, html, "utf8");
@@ -53,6 +54,37 @@ async function main(): Promise<void> {
       2,
     )}\n`,
   );
+}
+
+async function inlineDashboardAssets(html: string): Promise<string> {
+  const replacements = await Promise.all([
+    inlineAsset("assets/polymarket-referral-visual.png"),
+    inlineAsset("assets/musk7-code-banner.png"),
+    inlineAsset("assets/polymarket-trader-ticket-banner.png"),
+  ]);
+
+  let nextHtml = html;
+  for (const replacement of replacements) {
+    nextHtml = nextHtml.replaceAll(replacement.relativePath, replacement.dataUrl);
+  }
+
+  return nextHtml;
+}
+
+async function inlineAsset(relativePath: string): Promise<{ relativePath: string; dataUrl: string }> {
+  const absolutePath = path.resolve(relativePath);
+  const buffer = await fs.readFile(absolutePath);
+  const extension = path.extname(absolutePath).toLowerCase();
+  const mimeType = extension === ".jpg" || extension === ".jpeg"
+    ? "image/jpeg"
+    : extension === ".svg"
+      ? "image/svg+xml"
+      : "image/png";
+
+  return {
+    relativePath,
+    dataUrl: `data:${mimeType};base64,${buffer.toString("base64")}`,
+  };
 }
 
 function parseArgs(argv: string[]): ParsedArgs {
@@ -105,7 +137,7 @@ async function loadConfig(configFile: string | undefined): Promise<ForecastDashb
 
   const raw = JSON.parse(await fs.readFile(configFile, "utf8")) as Partial<ForecastDashboardConfig>;
   return {
-    title: raw.title?.trim() || "Polymarket Win Rate Desk",
+    title: raw.title?.trim() || "Polymarket Global 365 Desk",
     subtitle: raw.subtitle?.trim() || "Downloadable prediction dashboard with your own AI agent profile",
     accent: raw.accent === "cyan" || raw.accent === "amber" ? raw.accent : "green",
     agent: {
@@ -124,7 +156,7 @@ async function loadConfig(configFile: string | undefined): Promise<ForecastDashb
 
 function defaultConfig(): ForecastDashboardConfig {
   return {
-    title: "Polymarket Win Rate Desk",
+    title: "Polymarket Global 365 Desk",
     subtitle: "Downloadable prediction dashboard with your own AI agent profile",
     accent: "green",
     agent: {

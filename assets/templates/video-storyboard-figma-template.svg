@@ -1,0 +1,176 @@
+<svg width="1920" height="1560" viewBox="0 0 1920 1560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1560" fill="#111315"/>
+  <rect x="32" y="32" width="1856" height="1496" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+
+  <text x="72" y="92" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="34" font-weight="700">Video Storyboard Master Board</text>
+  <text x="72" y="124" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16">Use this board to manage message, structure, shot logic, transitions, and production cautions in one screen.</text>
+
+  <rect x="72" y="156" width="1084" height="160" rx="20" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+  <text x="104" y="194" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="700">PROJECT INFO</text>
+  <text x="104" y="234" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Title</text>
+  <rect x="104" y="246" width="472" height="28" rx="10" fill="#171A1F"/>
+  <text x="104" y="294" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Format / Runtime</text>
+  <rect x="104" y="306" width="220" height="28" rx="10" fill="#171A1F"/>
+  <text x="356" y="294" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Audience</text>
+  <rect x="356" y="306" width="220" height="28" rx="10" fill="#171A1F"/>
+  <text x="608" y="234" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Version / Date</text>
+  <rect x="608" y="246" width="220" height="28" rx="10" fill="#171A1F"/>
+  <text x="860" y="234" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Owner / Team</text>
+  <rect x="860" y="246" width="220" height="28" rx="10" fill="#171A1F"/>
+  <text x="608" y="294" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Delivery Spec</text>
+  <rect x="608" y="306" width="472" height="28" rx="10" fill="#171A1F"/>
+
+  <rect x="1188" y="156" width="700" height="160" rx="20" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+  <text x="1220" y="194" fill="#FFCC85" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="700">CORE MESSAGE</text>
+  <text x="1220" y="234" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">One-line Message</text>
+  <rect x="1220" y="246" width="636" height="28" rx="10" fill="#171A1F"/>
+  <text x="1220" y="294" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Emotion / Takeaway / CTA</text>
+  <rect x="1220" y="306" width="636" height="28" rx="10" fill="#171A1F"/>
+
+  <rect x="72" y="348" width="616" height="172" rx="20" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+  <text x="104" y="386" fill="#9EE6B1" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="700">STYLE AND CONTINUITY</text>
+  <text x="104" y="426" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Visual Tone / Lighting / Color</text>
+  <rect x="104" y="438" width="552" height="26" rx="10" fill="#171A1F"/>
+  <text x="104" y="486" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Character / Prop / Space Continuity Rules</text>
+  <rect x="104" y="498" width="552" height="26" rx="10" fill="#171A1F"/>
+
+  <rect x="720" y="348" width="436" height="172" rx="20" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+  <text x="752" y="386" fill="#F4A7FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="700">WATCH-OUTS</text>
+  <text x="752" y="426" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Must Avoid</text>
+  <rect x="752" y="438" width="372" height="26" rx="10" fill="#171A1F"/>
+  <text x="752" y="486" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Production Risks / Missing Assets</text>
+  <rect x="752" y="498" width="372" height="26" rx="10" fill="#171A1F"/>
+
+  <rect x="1188" y="348" width="700" height="172" rx="20" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+  <text x="1220" y="386" fill="#83E1D6" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="700">TRANSITION KEY</text>
+  <text x="1220" y="426" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Cut / Match Cut / Fade / Dissolve / Whip Pan / Speed Ramp / Hold</text>
+  <text x="1220" y="460" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Mark each shot with IN and OUT transitions to keep pacing visible on one board.</text>
+  <text x="1220" y="500" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="600">Story Arc</text>
+  <rect x="1220" y="512" width="636" height="26" rx="10" fill="#171A1F"/>
+
+  <g>
+    <rect x="72" y="560" width="560" height="420" rx="22" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+    <text x="102" y="598" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700">Shot 01</text>
+    <text x="234" y="598" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Duration:</text>
+    <rect x="302" y="578" width="84" height="24" rx="8" fill="#171A1F"/>
+    <text x="408" y="598" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Status:</text>
+    <rect x="462" y="578" width="138" height="24" rx="8" fill="#1C252E"/>
+    <rect x="102" y="620" width="500" height="170" rx="18" fill="#171A1F" stroke="#313943" stroke-dasharray="10 8"/>
+    <text x="260" y="708" fill="#687587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700">Frame / Still / Reference</text>
+    <text x="102" y="826" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">SHOT PURPOSE</text>
+    <rect x="102" y="838" width="500" height="28" rx="10" fill="#171A1F"/>
+    <text x="102" y="896" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">ACTION / BEAT</text>
+    <rect x="102" y="908" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="362" y="896" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">CAMERA / FRAMING</text>
+    <rect x="362" y="908" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="102" y="966" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">IN / OUT TRANSITION</text>
+    <rect x="102" y="978" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="362" y="966" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">DIALOG / SFX / MUSIC</text>
+    <rect x="362" y="978" width="240" height="28" rx="10" fill="#171A1F"/>
+  </g>
+
+  <g>
+    <rect x="680" y="560" width="560" height="420" rx="22" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+    <text x="710" y="598" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700">Shot 02</text>
+    <text x="842" y="598" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Duration:</text>
+    <rect x="910" y="578" width="84" height="24" rx="8" fill="#171A1F"/>
+    <text x="1016" y="598" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Status:</text>
+    <rect x="1070" y="578" width="138" height="24" rx="8" fill="#1C252E"/>
+    <rect x="710" y="620" width="500" height="170" rx="18" fill="#171A1F" stroke="#313943" stroke-dasharray="10 8"/>
+    <text x="868" y="708" fill="#687587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700">Frame / Still / Reference</text>
+    <text x="710" y="826" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">SHOT PURPOSE</text>
+    <rect x="710" y="838" width="500" height="28" rx="10" fill="#171A1F"/>
+    <text x="710" y="896" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">ACTION / BEAT</text>
+    <rect x="710" y="908" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="970" y="896" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">CAMERA / FRAMING</text>
+    <rect x="970" y="908" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="710" y="966" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">IN / OUT TRANSITION</text>
+    <rect x="710" y="978" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="970" y="966" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">DIALOG / SFX / MUSIC</text>
+    <rect x="970" y="978" width="240" height="28" rx="10" fill="#171A1F"/>
+  </g>
+
+  <g>
+    <rect x="1288" y="560" width="560" height="420" rx="22" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+    <text x="1318" y="598" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700">Shot 03</text>
+    <text x="1450" y="598" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Duration:</text>
+    <rect x="1518" y="578" width="84" height="24" rx="8" fill="#171A1F"/>
+    <text x="1624" y="598" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Status:</text>
+    <rect x="1678" y="578" width="138" height="24" rx="8" fill="#1C252E"/>
+    <rect x="1318" y="620" width="500" height="170" rx="18" fill="#171A1F" stroke="#313943" stroke-dasharray="10 8"/>
+    <text x="1476" y="708" fill="#687587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700">Frame / Still / Reference</text>
+    <text x="1318" y="826" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">SHOT PURPOSE</text>
+    <rect x="1318" y="838" width="500" height="28" rx="10" fill="#171A1F"/>
+    <text x="1318" y="896" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">ACTION / BEAT</text>
+    <rect x="1318" y="908" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="1578" y="896" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">CAMERA / FRAMING</text>
+    <rect x="1578" y="908" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="1318" y="966" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">IN / OUT TRANSITION</text>
+    <rect x="1318" y="978" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="1578" y="966" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">DIALOG / SFX / MUSIC</text>
+    <rect x="1578" y="978" width="240" height="28" rx="10" fill="#171A1F"/>
+  </g>
+
+  <g>
+    <rect x="72" y="1020" width="560" height="420" rx="22" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+    <text x="102" y="1058" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700">Shot 04</text>
+    <text x="234" y="1058" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Duration:</text>
+    <rect x="302" y="1038" width="84" height="24" rx="8" fill="#171A1F"/>
+    <text x="408" y="1058" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Status:</text>
+    <rect x="462" y="1038" width="138" height="24" rx="8" fill="#1C252E"/>
+    <rect x="102" y="1080" width="500" height="170" rx="18" fill="#171A1F" stroke="#313943" stroke-dasharray="10 8"/>
+    <text x="260" y="1168" fill="#687587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700">Frame / Still / Reference</text>
+    <text x="102" y="1286" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">SHOT PURPOSE</text>
+    <rect x="102" y="1298" width="500" height="28" rx="10" fill="#171A1F"/>
+    <text x="102" y="1356" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">ACTION / BEAT</text>
+    <rect x="102" y="1368" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="362" y="1356" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">CAMERA / FRAMING</text>
+    <rect x="362" y="1368" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="102" y="1426" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">IN / OUT TRANSITION</text>
+    <rect x="102" y="1438" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="362" y="1426" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">DIALOG / SFX / MUSIC</text>
+    <rect x="362" y="1438" width="240" height="28" rx="10" fill="#171A1F"/>
+  </g>
+
+  <g>
+    <rect x="680" y="1020" width="560" height="420" rx="22" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+    <text x="710" y="1058" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700">Shot 05</text>
+    <text x="842" y="1058" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Duration:</text>
+    <rect x="910" y="1038" width="84" height="24" rx="8" fill="#171A1F"/>
+    <text x="1016" y="1058" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Status:</text>
+    <rect x="1070" y="1038" width="138" height="24" rx="8" fill="#1C252E"/>
+    <rect x="710" y="1080" width="500" height="170" rx="18" fill="#171A1F" stroke="#313943" stroke-dasharray="10 8"/>
+    <text x="868" y="1168" fill="#687587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700">Frame / Still / Reference</text>
+    <text x="710" y="1286" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">SHOT PURPOSE</text>
+    <rect x="710" y="1298" width="500" height="28" rx="10" fill="#171A1F"/>
+    <text x="710" y="1356" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">ACTION / BEAT</text>
+    <rect x="710" y="1368" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="970" y="1356" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">CAMERA / FRAMING</text>
+    <rect x="970" y="1368" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="710" y="1426" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">IN / OUT TRANSITION</text>
+    <rect x="710" y="1438" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="970" y="1426" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">DIALOG / SFX / MUSIC</text>
+    <rect x="970" y="1438" width="240" height="28" rx="10" fill="#171A1F"/>
+  </g>
+
+  <g>
+    <rect x="1288" y="1020" width="560" height="420" rx="22" fill="#0F1216" stroke="#2A2F36" stroke-width="2"/>
+    <text x="1318" y="1058" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700">Shot 06</text>
+    <text x="1450" y="1058" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Duration:</text>
+    <rect x="1518" y="1038" width="84" height="24" rx="8" fill="#171A1F"/>
+    <text x="1624" y="1058" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15">Status:</text>
+    <rect x="1678" y="1038" width="138" height="24" rx="8" fill="#1C252E"/>
+    <rect x="1318" y="1080" width="500" height="170" rx="18" fill="#171A1F" stroke="#313943" stroke-dasharray="10 8"/>
+    <text x="1476" y="1168" fill="#687587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700">Frame / Still / Reference</text>
+    <text x="1318" y="1286" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">SHOT PURPOSE</text>
+    <rect x="1318" y="1298" width="500" height="28" rx="10" fill="#171A1F"/>
+    <text x="1318" y="1356" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">ACTION / BEAT</text>
+    <rect x="1318" y="1368" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="1578" y="1356" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">CAMERA / FRAMING</text>
+    <rect x="1578" y="1368" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="1318" y="1426" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">IN / OUT TRANSITION</text>
+    <rect x="1318" y="1438" width="240" height="28" rx="10" fill="#171A1F"/>
+    <text x="1578" y="1426" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="13" font-weight="700">DIALOG / SFX / MUSIC</text>
+    <rect x="1578" y="1438" width="240" height="28" rx="10" fill="#171A1F"/>
+  </g>
+</svg>

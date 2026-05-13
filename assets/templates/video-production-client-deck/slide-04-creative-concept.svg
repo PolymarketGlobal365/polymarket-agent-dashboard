@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">04</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">크리에이티브 컨셉</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">영상의 전체 인상을 결정하는 큰 아이디어와 표현 원칙을 제안합니다</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      <rect x="82" y="318" width="1756" height="230" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="126" y="376" fill="#FFCC85" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">Big Idea</text>
+      <text x="126" y="448" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="30" font-weight="700" text-anchor="start">정보를 나열하는 방식이 아니라, 하나의 감정과 하나의 핵심 가치가 이어지는</text>
+<text x="126" y="488" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="30" font-weight="700" text-anchor="start">인상 중심 영상으로 설계합니다.</text>
+      <rect x="82" y="584" width="552" height="330" rx="26" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="118" y="642" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="700" text-anchor="start">Mood Keywords</text>
+      
+        <rect x="118" y="684" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="146" cy="715" r="14" fill="#5A2E21"/>
+        <text x="141" y="721" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">1</text>
+        <text x="174" y="721" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">정제된</text>
+      
+
+        <rect x="118" y="762" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="146" cy="793" r="14" fill="#5A2E21"/>
+        <text x="141" y="799" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">2</text>
+        <text x="174" y="799" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">몰입감 있는</text>
+      
+
+        <rect x="118" y="840" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="146" cy="871" r="14" fill="#5A2E21"/>
+        <text x="141" y="877" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">3</text>
+        <text x="174" y="877" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">세련된</text>
+      
+
+        <rect x="118" y="918" width="480" height="62" rx="18" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+        <circle cx="146" cy="949" r="14" fill="#5A2E21"/>
+        <text x="141" y="955" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle">4</text>
+        <text x="174" y="955" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="600" text-anchor="start">기억에 남는</text>
+      
+      <rect x="684" y="584" width="552" height="330" rx="26" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="720" y="642" fill="#9EE6B1" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="700" text-anchor="start">Narrative Device</text>
+      <text x="720" y="700" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="23" font-weight="600" text-anchor="start">후킹 장면으로 시작하고, 핵심 가치가</text>
+<text x="720" y="734" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="23" font-weight="600" text-anchor="start">점점 분명해지도록 시선과 정보량을</text>
+<text x="720" y="768" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="23" font-weight="600" text-anchor="start">단계적으로 조절합니다.</text>
+      <rect x="1286" y="584" width="552" height="330" rx="26" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="1322" y="642" fill="#F4A7FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="17" font-weight="700" text-anchor="start">Brand Impression</text>
+      <text x="1322" y="700" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="23" font-weight="600" text-anchor="start">브랜드가 직접 설명하지 않아도 ‘이런</text>
+<text x="1322" y="734" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="23" font-weight="600" text-anchor="start">결을 가진 곳’이라고 느껴지도록 표정과</text>
+<text x="1322" y="768" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="23" font-weight="600" text-anchor="start">공간과 텍스처를 관리합니다.</text>
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>

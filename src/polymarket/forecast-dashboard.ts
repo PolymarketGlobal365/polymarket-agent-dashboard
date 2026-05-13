@@ -83,17 +83,24 @@ export function buildForecastDashboardViewModel(
 
 export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): string {
   const accent = accentPalette(model.accent);
-  const generatedLabel = formatDateTime(model.generatedAt);
   const cardsHtml = model.cards.map((card) => renderCard(card, accent)).join("\n");
+  const titleHtml = renderBrandTitle(model.title);
+  const promoImageSrc = "assets/polymarket-referral-visual.png";
+  const promoBannerSrc = "assets/musk7-code-banner.png";
+  const sideBannerSrc = "assets/polymarket-trader-ticket-banner.png";
+  const referralUrl = "https://polymarket.com/?r=musk7";
+  const telegramUrl = "https://t.me/+uVmF_bbp_roxYzZl";
+  const desktopFrameWidth = 1560;
 
   return `<!doctype html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(model.title)}</title>
     <style>
       :root {
+        --desktop-frame-width: ${desktopFrameWidth};
         --bg: #07110f;
         --bg-soft: #0b1b17;
         --panel: rgba(8, 17, 15, 0.84);
@@ -116,6 +123,7 @@ export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): 
           radial-gradient(circle at top left, rgba(74, 255, 199, 0.14), transparent 28%),
           radial-gradient(circle at top right, rgba(0, 182, 255, 0.12), transparent 22%),
           linear-gradient(180deg, #07110f 0%, #030605 100%);
+        overflow-x: hidden;
       }
       body::before {
         content: "";
@@ -128,15 +136,25 @@ export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): 
         opacity: 0.35;
         pointer-events: none;
       }
+      .viewport-shell {
+        width: 100%;
+        min-height: 100vh;
+      }
+      .desktop-stage {
+        width: calc(var(--desktop-frame-width) * 1px);
+        transform-origin: top left;
+        will-change: transform;
+      }
       .shell {
         position: relative;
+        width: 100%;
         max-width: 1500px;
         margin: 0 auto;
         padding: 28px;
       }
       .topbar {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 16px;
         align-items: center;
         margin-bottom: 20px;
@@ -170,6 +188,10 @@ export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): 
         font-size: clamp(28px, 4vw, 50px);
         line-height: 1.02;
         letter-spacing: -0.05em;
+      }
+      .title-accent-red {
+        color: #ff4242;
+        text-shadow: 0 0 18px rgba(255, 66, 66, 0.28);
       }
       .subtitle {
         margin-top: 8px;
@@ -238,7 +260,76 @@ export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): 
         font-size: 13px;
         color: var(--muted);
       }
+      .promo-panel {
+        grid-column: 1 / -1;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        min-height: 320px;
+        border: 1px solid rgba(255,255,255,0.05);
+        background:
+          linear-gradient(135deg, rgba(21, 62, 49, 0.72), rgba(5, 12, 10, 0.92)),
+          radial-gradient(circle at top right, rgba(74, 255, 199, 0.18), transparent 30%);
+        text-decoration: none;
+        color: inherit;
+      }
+      .promo-visual {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.86;
+        filter: saturate(1.05) contrast(1.02);
+      }
+      .promo-scrim {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(3, 9, 7, 0.08), rgba(3, 9, 7, 0.62)),
+          linear-gradient(90deg, rgba(3, 9, 7, 0.12), rgba(3, 9, 7, 0.04));
+        pointer-events: none;
+      }
+      .promo-copy {
+        position: absolute;
+        left: 22px;
+        right: 22px;
+        bottom: 22px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .promo-kicker {
+        color: var(--accent);
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      .promo-title {
+        margin-top: 10px;
+        font-size: clamp(22px, 2.4vw, 34px);
+        line-height: 1.1;
+        max-width: 560px;
+        font-weight: 900;
+        text-shadow: 0 10px 20px rgba(0,0,0,0.35);
+      }
+      .promo-note {
+        margin-top: 10px;
+        color: #d6f7eb;
+        font-size: 14px;
+        max-width: 520px;
+      }
+      .promo-banner {
+        width: min(420px, 42%);
+        min-width: 240px;
+        background: rgba(255,255,255,0.94);
+        border-radius: 14px;
+        box-shadow: 0 18px 30px rgba(0,0,0,0.28);
+      }
       .agent-panel {
+        display: flex;
+        flex-direction: column;
         padding: 22px;
       }
       .agent-header {
@@ -277,6 +368,70 @@ export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): 
         background: rgba(255,255,255,0.03);
         font-size: 13px;
       }
+      .agent-banner-wrap {
+        margin-top: 18px;
+        display: block;
+        border: 1px solid rgba(255,255,255,0.05);
+        background: rgba(255,255,255,0.02);
+        overflow: hidden;
+        text-decoration: none;
+      }
+      .agent-banner-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .telegram-card {
+        margin-top: auto;
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,0.05);
+        background:
+          linear-gradient(180deg, rgba(10, 24, 21, 0.92), rgba(5, 12, 10, 0.96)),
+          radial-gradient(circle at top right, rgba(74, 255, 199, 0.08), transparent 30%);
+      }
+      .telegram-title {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+      .telegram-copy {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .telegram-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        padding: 12px 18px;
+        min-width: 100%;
+        border: 1px solid var(--line-strong);
+        background: rgba(101,255,191,0.08);
+        color: var(--text);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        transition: background 120ms ease, transform 120ms ease;
+      }
+      .telegram-button:hover {
+        background: rgba(101,255,191,0.14);
+        transform: translateY(-1px);
+      }
+      .telegram-linkline {
+        margin-top: 12px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+        word-break: break-all;
+      }
+      .card-link-shell {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+      }
       .cards {
         display: grid;
         gap: 16px;
@@ -284,6 +439,7 @@ export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): 
       }
       .card {
         padding: 18px;
+        cursor: pointer;
       }
       .card-top {
         display: flex;
@@ -366,91 +522,119 @@ export function renderForecastDashboardHtml(model: ForecastDashboardViewModel): 
         text-decoration: none;
         font-size: 13px;
       }
-      @media (max-width: 1100px) {
-        .grid,
-        .hero-grid,
-        .meta-grid {
-          grid-template-columns: 1fr;
-        }
-        .probability {
-          min-width: 0;
-          text-align: left;
-        }
-        .card-top,
-        .topbar,
-        .agent-header {
-          display: block;
-        }
-        .stamp {
-          margin-top: 14px;
-          text-align: left;
-        }
-      }
     </style>
   </head>
   <body>
-    <main class="shell">
-      <section class="topbar panel">
-        <div class="brand">
-          <span class="dot"></span>
-          <div>
-            <div class="eyebrow">AI Forecast Desk</div>
-            <h1>${escapeHtml(model.title)}</h1>
-            <div class="subtitle">${escapeHtml(model.subtitle)}</div>
-          </div>
-        </div>
-        <div class="stamp">
-          Generated: ${escapeHtml(generatedLabel)}<br />
-          Scanned ${model.scannedMarkets} markets / shortlisted ${model.shortlistedMarkets}
-        </div>
-      </section>
-      <section class="grid">
-        <div class="hero panel">
-          <div class="hero-grid">
-            <div class="terminal">
-              <div class="eyebrow">Desk Readout</div>
-              <div class="terminal-line"><strong>${escapeHtml(model.deskHeadline)}</strong></div>
-              <div class="terminal-line">${escapeHtml(model.deskSummary)}</div>
-              <div class="terminal-line">Primary bias split: ${model.bullishCount} bullish / ${model.bearishCount} bearish</div>
-              <div class="terminal-line">Execution tone: ${escapeHtml(riskStyleLabel(model.agent.riskStyle))}</div>
-            </div>
-            <div class="stat-stack">
-              <div class="stat">
-                <div class="stat-label">Top win rate</div>
-                <div class="stat-value">${formatPercent(model.topProbability)}</div>
-                <div class="stat-note">Highest probability across current shortlist</div>
-              </div>
-              <div class="stat">
-                <div class="stat-label">Average win rate</div>
-                <div class="stat-value">${formatPercent(model.averageProbability)}</div>
-                <div class="stat-note">Mean conviction across the displayed board</div>
+    <div class="viewport-shell" data-viewport-shell>
+      <div class="desktop-stage" data-desktop-stage>
+        <main class="shell">
+          <section class="topbar panel">
+            <div class="brand">
+              <span class="dot"></span>
+              <div>
+                <div class="eyebrow">AI Forecast Desk</div>
+                <h1>${titleHtml}</h1>
+                <div class="subtitle">${escapeHtml(model.subtitle)}</div>
               </div>
             </div>
-          </div>
-        </div>
-        <aside class="agent-panel panel">
-          <div class="agent-header">
-            <div>
-              <div class="eyebrow">User Agent</div>
-              <div class="agent-name">${escapeHtml(model.agent.agentName)}</div>
+          </section>
+          <section class="grid">
+            <div class="hero panel">
+              <div class="hero-grid">
+                <div class="terminal">
+                  <div class="eyebrow">Desk Readout</div>
+                  <div class="terminal-line"><strong>${escapeHtml(model.deskHeadline)}</strong></div>
+                  <div class="terminal-line">${escapeHtml(model.deskSummary)}</div>
+                  <div class="terminal-line">Primary bias split: ${model.bullishCount} bullish / ${model.bearishCount} bearish</div>
+                  <div class="terminal-line">Execution tone: ${escapeHtml(riskStyleLabel(model.agent.riskStyle))}</div>
+                </div>
+                <div class="stat-stack">
+                  <div class="stat">
+                    <div class="stat-label">Top win rate</div>
+                    <div class="stat-value">${formatPercent(model.topProbability)}</div>
+                    <div class="stat-note">Highest probability across current shortlist</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-label">Average win rate</div>
+                    <div class="stat-value">${formatPercent(model.averageProbability)}</div>
+                    <div class="stat-note">Mean conviction across the displayed board</div>
+                  </div>
+                </div>
+                <a class="promo-panel" href="${referralUrl}" target="_blank" rel="noreferrer">
+                  <img class="promo-visual" src="${promoImageSrc}" alt="Polymarket referral visual" />
+                  <div class="promo-scrim"></div>
+                  <div class="promo-copy">
+                    <div>
+                      <div class="promo-kicker">Referral Spotlight</div>
+                      <div class="promo-title">Use referral code <span class="title-accent-red">MUSK7</span> for a bonus.</div>
+                      <div class="promo-note">A branded referral visual now fills the spare desk space with a cleaner promo treatment.</div>
+                    </div>
+                    <img class="promo-banner" src="${promoBannerSrc}" alt="Referral code MUSK7 banner" />
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="pill">${escapeHtml(model.agent.provider)} / ${escapeHtml(model.agent.model)}</div>
-          </div>
-          <div class="agent-meta">This dashboard is ready for a user-selected AI agent layer and can be extended with live model commentary.</div>
-          <div class="agent-list">
-            <div class="agent-item">Strategy: ${escapeHtml(model.agent.strategy)}</div>
-            <div class="agent-item">Risk profile: ${escapeHtml(riskStyleLabel(model.agent.riskStyle))}</div>
-            <div class="agent-item">Voice note: ${escapeHtml(model.agent.voiceNote ?? "냉정한 트레이딩 데스크 톤으로 브리핑")}</div>
-          </div>
-          <div class="agent-strategy" style="margin-top: 16px;">
-            Next, you can connect a real model provider such as OpenAI, Claude, or Gemini to generate card-by-card commentary automatically.
-          </div>
-        </aside>
-      </section>
-      <section class="cards">
-        ${cardsHtml}
-      </section>
-    </main>
+            <aside class="agent-panel panel">
+              <div class="agent-header">
+                <div>
+                  <div class="eyebrow">User Agent</div>
+                  <div class="agent-name">${escapeHtml(model.agent.agentName)}</div>
+                </div>
+                <div class="pill">${escapeHtml(model.agent.provider)} / ${escapeHtml(model.agent.model)}</div>
+              </div>
+              <div class="agent-meta">This dashboard is ready for a user-selected AI agent layer and can be extended with live model commentary.</div>
+              <div class="agent-list">
+                <div class="agent-item">Strategy: ${escapeHtml(model.agent.strategy)}</div>
+                <div class="agent-item">Risk profile: ${escapeHtml(riskStyleLabel(model.agent.riskStyle))}</div>
+                <div class="agent-item">Voice note: ${escapeHtml(model.agent.voiceNote ?? "Calm trading desk briefing with fast, clear calls")}</div>
+              </div>
+              <div class="agent-strategy" style="margin-top: 16px;">
+                Next, you can connect a real model provider such as OpenAI, Claude, or Gemini to generate card-by-card commentary automatically.
+              </div>
+              <a class="agent-banner-wrap" href="${referralUrl}" target="_blank" rel="noreferrer">
+                <img class="agent-banner-image" src="${sideBannerSrc}" alt="Polymarket referral code MUSK7 banner" />
+              </a>
+              <div class="telegram-card">
+                <div class="eyebrow">Telegram Room</div>
+                <div class="telegram-title">Join the Polymarket Global 365 Telegram room.</div>
+                <div class="telegram-copy">Get updates, room access, and fast desk links in one place with a clean direct join button.</div>
+                <a class="telegram-button" href="${telegramUrl}" target="_blank" rel="noreferrer">Join Telegram Room</a>
+                <div class="telegram-linkline">${telegramUrl}</div>
+              </div>
+            </aside>
+          </section>
+          <section class="cards">
+            ${cardsHtml}
+          </section>
+        </main>
+      </div>
+    </div>
+    <script>
+      (() => {
+        const viewportShell = document.querySelector("[data-viewport-shell]");
+        const desktopStage = document.querySelector("[data-desktop-stage]");
+        if (!(viewportShell instanceof HTMLElement) || !(desktopStage instanceof HTMLElement)) {
+          return;
+        }
+
+        const desktopWidth = ${desktopFrameWidth};
+
+        const applyScale = () => {
+          const availableWidth = Math.max(window.innerWidth, 320);
+          const scale = Math.min(1, availableWidth / desktopWidth);
+          desktopStage.style.transform = \`scale(\${scale})\`;
+          viewportShell.style.height = \`\${desktopStage.offsetHeight * scale}px\`;
+          viewportShell.style.overflow = scale < 1 ? "hidden" : "visible";
+        };
+
+        const scheduleScale = () => window.requestAnimationFrame(applyScale);
+        const resizeObserver = new ResizeObserver(scheduleScale);
+        resizeObserver.observe(desktopStage);
+        window.addEventListener("resize", scheduleScale, { passive: true });
+        window.addEventListener("load", scheduleScale, { once: true });
+        scheduleScale();
+      })();
+    </script>
   </body>
 </html>`;
 }
@@ -497,12 +681,13 @@ function buildDeskSummary(cards: ForecastDashboardCard[], agent: ForecastAgentPr
 }
 
 function renderCard(card: ForecastDashboardCard, accent: ReturnType<typeof accentPalette>): string {
-  return `<article class="card panel">
+  const referralUrl = "https://polymarket.com/?r=musk7";
+  return `<article class="card panel" onclick="window.open('${referralUrl}', '_blank', 'noopener,noreferrer')">
     <div class="card-top">
       <div>
         <div class="rank">Signal ${card.rank.toString().padStart(2, "0")}</div>
         <h2 class="market">${escapeHtml(card.marketQuestion)}</h2>
-        <div class="event">${escapeHtml(card.eventTitle)} · ${escapeHtml(card.outcomeLabel)} lane</div>
+        <div class="event">${escapeHtml(card.eventTitle)} - ${escapeHtml(card.outcomeLabel)} lane</div>
       </div>
       <div class="probability">
         <div class="probability-value">${formatPercent(card.probability)}</div>
@@ -523,7 +708,7 @@ function renderCard(card: ForecastDashboardCard, accent: ReturnType<typeof accen
       <div class="meta"><div class="meta-key">Outcome</div><div class="meta-value">${escapeHtml(card.outcomeLabel)}</div></div>
     </div>
     <div class="rationale">${escapeHtml(card.rationale)}</div>
-    <a class="footer-link" href="${escapeHtml(card.eventUrl)}" target="_blank" rel="noreferrer">Open market</a>
+    <span class="footer-link">Open market</span>
   </article>`;
 }
 
@@ -581,10 +766,29 @@ function formatDateTime(value: string): string {
     return value;
   }
 
-  return parsed.toLocaleString("ko-KR", {
-    dateStyle: "medium",
-    timeStyle: "short",
-  });
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const month = months[parsed.getMonth()] ?? "Jan";
+  const day = parsed.getDate();
+  const year = parsed.getFullYear();
+  const rawHours = parsed.getHours();
+  const hours = rawHours % 12 === 0 ? 12 : rawHours % 12;
+  const minutes = parsed.getMinutes().toString().padStart(2, "0");
+  const period = rawHours >= 12 ? "PM" : "AM";
+
+  return `${month} ${day}, ${year}, ${hours}:${minutes} ${period}`;
 }
 
 function clamp(value: number, min: number, max: number): number {
@@ -598,4 +802,13 @@ function escapeHtml(value: string): string {
     .replaceAll(">", "&gt;")
     .replaceAll("\"", "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function renderBrandTitle(title: string): string {
+  if (!title.includes("365")) {
+    return escapeHtml(title);
+  }
+
+  const [before = "", ...rest] = title.split("365");
+  return `${escapeHtml(before)}<span class="title-accent-red">365</span>${escapeHtml(rest.join("365"))}`;
 }

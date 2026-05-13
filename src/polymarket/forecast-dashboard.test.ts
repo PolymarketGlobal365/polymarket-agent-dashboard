@@ -28,6 +28,8 @@ test("renderForecastDashboardHtml includes agent profile and market cards", () =
   assert.match(html, /Will Bitcoin finish May above 120k\?/);
   assert.match(html, /AI Forecast Desk/);
   assert.match(html, /Open market/);
+  assert.match(html, /data-desktop-stage/);
+  assert.match(html, /ResizeObserver/);
 });
 
 function sampleConfig(): ForecastDashboardConfig {

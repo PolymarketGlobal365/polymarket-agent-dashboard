@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">01</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">영상 제작 제안서</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">브랜드 메시지를 명확한 서사와 설계된 비주얼로 전달하는 프로덕션형 제안 덱</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      <rect x="82" y="312" width="928" height="612" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      <text x="128" y="388" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Project Title</text>
+      <rect x="128" y="406" width="388" height="34" rx="12" fill="#13171C"/>
+      <text x="128" y="496" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Overview</text>
+      <text x="128" y="536" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="start">이 덱은 기획 의도, 타깃 설계, 서사 구조, 비주얼</text>
+<text x="128" y="570" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="start">방향, 제작 프로세스를 한 번에 설명하기 위한</text>
+<text x="128" y="604" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="600" text-anchor="start">클라이언트용 제안서입니다.</text>
+      <rect x="128" y="704" width="816" height="164" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <text x="160" y="752" fill="#FFCC85" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="15" font-weight="700" text-anchor="start">Deck Use</text>
+      <text x="160" y="792" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">클라이언트 공유용 / 내부 합의용 / 촬영 및 생성 파이프라인 설명용</text>
+      
+    <rect x="1074" y="312" width="764" height="612" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2" stroke-dasharray="12 10" />
+    <text x="1456" y="610" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Hero Frame / Key Visual</text>
+    <text x="1456" y="644" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="500" text-anchor="middle">replace with still / frame / moodboard</text>
+  
+      <rect x="1584" y="110" width="190" height="56" rx="18" fill="#5A2E21"/>
+      <text x="1679" y="146" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle">CLIENT VER.</text>
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>

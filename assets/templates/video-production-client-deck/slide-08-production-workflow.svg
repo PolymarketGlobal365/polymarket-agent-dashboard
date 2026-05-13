@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1920" height="1080" rx="0" fill="#111315"/>
+    <defs>
+      <linearGradient id="accent-glow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E87141" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#E87141" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1710" cy="160" r="240" fill="url(#accent-glow)"/>
+    <rect x="36" y="36" width="1848" height="1008" rx="28" fill="transparent" stroke="#2A2F36" stroke-width="2"/>
+    <text x="82" y="104" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="700" text-anchor="start">08</text>
+    <text x="82" y="176" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="54" font-weight="700" text-anchor="start">제작 프로세스</text>
+    <text x="82" y="218" fill="#99A3B3" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="500" text-anchor="start">기획부터 최종 납품까지 어떤 방식으로 안전하게 결과물을 완성하는지 설명합니다</text>
+    <line x1="82" y1="248" x2="1838" y2="248" stroke="#2A2F36" stroke-width="2" />
+    
+      <rect x="82" y="326" width="1756" height="548" rx="28" fill="#171A1F" stroke="#2A2F36" stroke-width="2"/>
+      
+          <circle cx="146" cy="536" r="28" fill="#5A2E21"/>
+          <text x="146" y="545" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="middle">1</text>
+          <text x="104" y="456" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="start">기획</text>
+          <line x1="184" y1="536" x2="440" y2="536" stroke="#2A2F36" stroke-width="3" />
+        
+
+          <circle cx="478" cy="536" r="28" fill="#5A2E21"/>
+          <text x="478" y="545" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="middle">2</text>
+          <text x="436" y="456" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="start">비주얼 설계</text>
+          <line x1="516" y1="536" x2="772" y2="536" stroke="#2A2F36" stroke-width="3" />
+        
+
+          <circle cx="810" cy="536" r="28" fill="#5A2E21"/>
+          <text x="810" y="545" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="middle">3</text>
+          <text x="768" y="456" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="start">생성/제작</text>
+          <line x1="848" y1="536" x2="1104" y2="536" stroke="#2A2F36" stroke-width="3" />
+        
+
+          <circle cx="1142" cy="536" r="28" fill="#5A2E21"/>
+          <text x="1142" y="545" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="middle">4</text>
+          <text x="1100" y="456" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="start">편집/후반</text>
+          <line x1="1180" y1="536" x2="1436" y2="536" stroke="#2A2F36" stroke-width="3" />
+        
+
+          <circle cx="1474" cy="536" r="28" fill="#5A2E21"/>
+          <text x="1474" y="545" fill="#E87141" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="22" font-weight="700" text-anchor="middle">5</text>
+          <text x="1432" y="456" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="24" font-weight="700" text-anchor="start">검수/납품</text>
+          
+        
+      <text x="98" y="630" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">브리프 정리 / 목표 정의</text>
+<text x="98" y="658" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">/ 자료 취합</text>
+      <text x="430" y="630" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">스토리보드 / 무드보드 /</text>
+<text x="430" y="658" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">레퍼런스 설계</text>
+      <text x="762" y="630" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">컷 생성 / 소스 제작 /</text>
+<text x="762" y="658" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">필요한 촬영 또는 합성</text>
+      <text x="1094" y="630" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">리듬 편집 / 사운드 /</text>
+<text x="1094" y="658" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">자막 / 색보정</text>
+      <text x="1426" y="630" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">수정 반영 / 출력 점검</text>
+<text x="1426" y="658" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="18" font-weight="600" text-anchor="start">/ 최종 납품</text>
+      <rect x="82" y="908" width="854" height="122" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <rect x="984" y="908" width="854" height="122" rx="24" fill="#13171C" stroke="#2A2F36" stroke-width="2"/>
+      <text x="118" y="958" fill="#83E1D6" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Why This Workflow Works</text>
+      <text x="1020" y="958" fill="#9BC0FF" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="16" font-weight="700" text-anchor="start">Client Communication Point</text>
+      <text x="118" y="998" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">기획과 비주얼 설계를 먼저 고정해 불필요한 수정</text>
+<text x="118" y="1028" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">비용을 줄입니다.</text>
+      <text x="1020" y="998" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">중간 단계마다 방향 확인 포인트를 두어 결과물이</text>
+<text x="1020" y="1028" fill="#F5F7FA" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="20" font-weight="600" text-anchor="start">어긋나지 않게 관리합니다.</text>
+    
+    <text x="1838" y="1014" fill="#697587" font-family="Pretendard, Noto Sans KR, Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">Production Proposal Deck</text>
+  </svg>
