@@ -11,6 +11,13 @@
   --serif: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --sans: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --shadow: 0 28px 80px rgba(109, 70, 44, 0.12);
+  --section-space: 112px;
+  --section-space-tight: 88px;
+  --section-head-gap: 22px;
+  --section-head-bottom: 44px;
+  --card-gap: 24px;
+  --card-padding-lg: 32px;
+  --card-padding-md: 28px;
 }
 
 * {
@@ -371,6 +378,74 @@ textarea {
   margin-top: 30px;
 }
 
+.partner-marquee {
+  margin-top: 34px;
+  display: grid;
+  gap: 14px;
+}
+
+.partner-marquee p {
+  margin: 0;
+  color: rgba(84, 67, 55, 0.68);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.partner-track {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  padding: 12px 0;
+  background: rgba(255, 248, 241, 0.58);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.partner-track::before,
+.partner-track::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 84px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.partner-track::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(247, 241, 233, 0.96), rgba(247, 241, 233, 0));
+}
+
+.partner-track::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(247, 241, 233, 0.96), rgba(247, 241, 233, 0));
+}
+
+.partner-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  animation: partner-marquee 28s linear infinite;
+}
+
+.partner-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 174px;
+  height: 52px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: rgba(255, 250, 244, 0.9);
+  color: rgba(72, 57, 46, 0.78);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  box-shadow: 0 10px 22px rgba(109, 70, 44, 0.06);
+}
+
 .hero-visual {
   margin-top: 56px;
 }
@@ -501,7 +576,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 32px 0 72px;
+  padding: 8px 0 var(--section-space-tight);
   color: var(--muted);
   flex-wrap: nowrap;
 }
@@ -550,13 +625,13 @@ textarea {
 .case-section,
 .portfolio-section,
 .contact-section {
-  padding: 28px 0 92px;
+  padding: 40px 0 var(--section-space);
 }
 
 .section-head {
   display: grid;
-  gap: 18px;
-  margin-bottom: 34px;
+  gap: var(--section-head-gap);
+  margin-bottom: var(--section-head-bottom);
 }
 
 .section-head.two-column {
@@ -566,7 +641,7 @@ textarea {
 
 .section-head.centered {
   max-width: 860px;
-  margin: 0 auto 34px;
+  margin: 0 auto var(--section-head-bottom);
   text-align: center;
 }
 
@@ -623,24 +698,58 @@ textarea {
 }
 
 .metric-stage {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  padding: 36px;
+  gap: var(--card-gap);
+  padding: var(--card-padding-lg);
   background:
-    radial-gradient(circle at 14% 68%, rgba(255, 216, 109, 0.62), transparent 28%),
-    radial-gradient(circle at 56% 74%, rgba(255, 116, 67, 0.42), transparent 24%),
-    radial-gradient(circle at 84% 20%, rgba(91, 164, 255, 0.58), transparent 26%),
-    linear-gradient(135deg, #6fceda 0%, #2090a8 52%, #155d77 100%);
+    radial-gradient(circle at 16% 70%, rgba(255, 214, 145, 0.96), transparent 32%),
+    radial-gradient(circle at 54% 34%, rgba(255, 110, 59, 0.88), transparent 18%),
+    radial-gradient(circle at 62% 12%, rgba(255, 88, 61, 0.8), transparent 12%),
+    radial-gradient(circle at 82% 26%, rgba(88, 149, 210, 0.76), transparent 26%),
+    linear-gradient(135deg, #f3d8c6 0%, #f4b06e 28%, #eb8a7a 54%, #7ba3c7 100%);
   color: #fff;
   box-shadow: var(--shadow);
+  isolation: isolate;
+}
+
+.metric-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 52% 28%, rgba(255, 176, 92, 0.38), transparent 18%),
+    radial-gradient(circle at 72% 16%, rgba(255, 120, 78, 0.28), transparent 12%),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.08), rgba(16, 62, 96, 0.14));
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.metric-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.2) 0.7px, transparent 0.7px),
+    radial-gradient(rgba(0, 0, 0, 0.12) 0.6px, transparent 0.6px);
+  background-position: 0 0, 9px 9px;
+  background-size: 18px 18px;
+  mix-blend-mode: soft-light;
+  opacity: 0.34;
+  z-index: 0;
 }
 
 .metric-card {
-  padding: 34px 28px;
+  position: relative;
+  z-index: 1;
+  padding: 36px 30px;
   border-radius: 28px;
-  background: rgba(240, 255, 250, 0.26);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(207, 224, 228, 0.52), rgba(173, 192, 198, 0.42));
+  backdrop-filter: blur(16px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .metric-card strong {
@@ -658,23 +767,80 @@ textarea {
   line-height: 1.6;
 }
 
+.team-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 22px;
+  padding: 26px 28px;
+  border-radius: 30px;
+  background: rgba(255, 249, 242, 0.78);
+  box-shadow: 0 18px 36px rgba(109, 70, 44, 0.08);
+}
+
+.team-cta-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.team-cta-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.team-cta-head h3 {
+  margin: 0;
+  color: #2a1a11;
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.team-cta-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(93, 62, 36, 0.08);
+  color: rgba(42, 26, 17, 0.82);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.team-cta p {
+  margin: 0;
+  color: rgba(76, 61, 51, 0.7);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.team-cta-button {
+  flex: 0 0 auto;
+  min-width: 126px;
+  background: #2f1b0f;
+}
+
 .services-layout {
   display: grid;
   grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1fr);
-  gap: 48px;
+  gap: 56px;
   align-items: center;
 }
 
 .service-list {
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .service-item {
   display: flex;
   align-items: baseline;
   gap: 14px;
-  padding: 18px 12px;
+  padding: 20px 14px;
   border-radius: 22px;
   color: rgba(74, 38, 17, 0.46);
   text-align: left;
@@ -704,8 +870,8 @@ textarea {
 .service-preview {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.75fr);
-  gap: 28px;
-  padding: 26px;
+  gap: 32px;
+  padding: var(--card-padding-md);
   background: rgba(255, 250, 244, 0.56);
   box-shadow: 0 18px 40px rgba(109, 70, 44, 0.06);
 }
@@ -762,6 +928,10 @@ textarea {
   font-weight: 700;
 }
 
+.service-preview-copy h3 {
+  max-width: 6.6em;
+}
+
 .service-preview-copy a {
   display: inline-flex;
   margin-top: 20px;
@@ -775,7 +945,7 @@ textarea {
 .contact-section,
 .portfolio-grid {
   display: grid;
-  gap: 20px;
+  gap: var(--card-gap);
 }
 
 .comparison-grid {
@@ -784,7 +954,7 @@ textarea {
 
 .comparison-card {
   min-height: 380px;
-  padding: 22px;
+  padding: var(--card-padding-md);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -810,9 +980,9 @@ textarea {
 
 .comparison-tags {
   position: absolute;
-  left: 22px;
-  right: 22px;
-  bottom: 22px;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -832,14 +1002,14 @@ textarea {
 }
 
 .comparison-card h3 {
-  margin-top: 154px;
-  margin-bottom: 10px;
+  margin-top: 162px;
+  margin-bottom: 12px;
   position: relative;
   z-index: 1;
 }
 
 .comparison-card p {
-  margin-bottom: 76px;
+  margin-bottom: 84px;
   position: relative;
   z-index: 1;
 }
@@ -856,12 +1026,12 @@ textarea {
 .case-metrics {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 26px;
+  gap: 18px;
+  margin-top: 30px;
 }
 
 .case-metrics div {
-  padding: 24px;
+  padding: 26px;
   border-radius: 24px;
   background: rgba(255, 249, 242, 0.68);
 }
@@ -925,16 +1095,48 @@ textarea {
 }
 
 .portfolio-card {
-  min-height: 250px;
-  padding: 28px;
+  min-height: 260px;
+  padding: 18px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.08)),
     rgba(255, 248, 241, 0.56);
   box-shadow: 0 18px 36px rgba(109, 70, 44, 0.06);
 }
 
+.portfolio-copy {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(255, 208, 122, 0.5), transparent 24%),
+    radial-gradient(circle at 70% 78%, rgba(140, 180, 255, 0.18), transparent 26%),
+    radial-gradient(circle at 50% 40%, rgba(255, 125, 71, 0.16), transparent 18%),
+    linear-gradient(135deg, #cf8161 0%, #e88f59 32%, #cb8f74 56%, #276778 100%);
+  color: #fff8f1;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
 .portfolio-kicker {
-  margin-bottom: 24px;
+  align-self: flex-start;
+  margin-bottom: 0;
+  background: rgba(255, 248, 241, 0.24);
+  color: #fff8f1;
+}
+
+.portfolio-card h3 {
+  max-width: 12ch;
+  color: #fffdf8;
+}
+
+.portfolio-card p {
+  margin: 0;
+  color: rgba(255, 245, 238, 0.84);
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .contact-section {
@@ -942,7 +1144,7 @@ textarea {
 }
 
 .contact-panel {
-  padding: 30px;
+  padding: var(--card-padding-md);
   background: rgba(255, 249, 242, 0.68);
   box-shadow: 0 18px 42px rgba(109, 70, 44, 0.08);
 }
@@ -1061,6 +1263,15 @@ textarea {
   }
 }
 
+@keyframes partner-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 9px));
+  }
+}
+
 @media (max-width: 980px) {
   .site-nav,
   .section-head.two-column,
@@ -1081,6 +1292,26 @@ textarea {
     gap: 14px;
   }
 
+  .hero h1,
+  .services-section .section-head h2 {
+    white-space: normal;
+  }
+
+  .team-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .team-cta-button {
+    min-width: 0;
+  }
+
+  .partner-logo {
+    min-width: 150px;
+    height: 48px;
+    font-size: 0.9rem;
+  }
+
   .nav-group {
     gap: 14px;
   }
@@ -1093,6 +1324,10 @@ textarea {
 @media (max-width: 720px) {
   .page-shell {
     width: min(100% - 20px, 1120px);
+  }
+
+  .hero {
+    padding: 88px 0 34px;
   }
 
   .site-nav {
@@ -1131,6 +1366,20 @@ textarea {
     min-height: 300px;
   }
 
+  .about-section,
+  .services-section,
+  .comparison-section,
+  .case-section,
+  .portfolio-section,
+  .contact-section {
+    padding: 26px 0 74px;
+  }
+
+  .section-head {
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
   .dot-field {
     inset: 12% 5%;
   }
@@ -1155,14 +1404,33 @@ textarea {
   }
 
   .metric-stage {
-    padding: 18px;
+    gap: 16px;
+    padding: 20px;
   }
 
   .metric-card,
   .comparison-card,
   .portfolio-card,
   .contact-panel {
+    padding: 24px;
+  }
+
+  .service-preview {
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .portfolio-copy {
+    padding: 24px;
+  }
+
+  .team-cta {
+    margin-top: 18px;
     padding: 22px;
+  }
+
+  .partner-marquee {
+    margin-top: 26px;
   }
 
   .comparison-card {
@@ -1200,6 +1468,27 @@ textarea {
 
   .hero-text {
     white-space: normal;
+  }
+
+  .team-cta-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-cta {
+    gap: 18px;
+  }
+
+  .partner-row {
+    gap: 12px;
+  }
+
+  .partner-logo {
+    min-width: 132px;
+    height: 44px;
+    padding: 0 16px;
+    font-size: 0.82rem;
   }
 
   .logo-strip {

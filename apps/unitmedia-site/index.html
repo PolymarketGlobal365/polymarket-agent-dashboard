@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
@@ -44,6 +44,24 @@
           <div class="hero-actions">
             <a class="button button-dark" href="#contact">문의하기</a>
             <a class="button button-light" href="#services">어떻게 진행되나요</a>
+          </div>
+
+          <div class="partner-marquee" aria-label="우리의 협력사들">
+            <p>우리의 협력사들</p>
+            <div class="partner-track">
+              <div class="partner-row">
+                <span class="partner-logo">국가유산청</span>
+                <span class="partner-logo">국립고궁박물관</span>
+                <span class="partner-logo">국립고궁박물관</span>
+                <span class="partner-logo">국립무형유산원</span>
+                <span class="partner-logo">여주시</span>
+                <span class="partner-logo">국가유산청</span>
+                <span class="partner-logo">국립고궁박물관</span>
+                <span class="partner-logo">국립고궁박물관</span>
+                <span class="partner-logo">국립무형유산원</span>
+                <span class="partner-logo">여주시</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -134,7 +152,7 @@
           <article class="service-preview" id="service-preview">
             <div class="service-preview-art service-art-discover"></div>
             <div class="service-preview-copy">
-              <h3 id="service-title">홍보 목적과 타깃을 먼저 정리합니다.</h3>
+              <h3 id="service-title">홍보 목적과<br />타깃을 먼저<br />정리합니다.</h3>
               <p id="service-description">
                 영상이 필요한 이유, 어디에 배포되는지, 어떤 반응을 만들고 싶은지부터 정리해 기획의
                 방향을 잡습니다.
@@ -222,20 +240,32 @@
       <section class="portfolio-section">
         <div class="portfolio-grid">
           <article class="portfolio-card">
-            <span class="portfolio-kicker">Longform</span>
-            <h3>브랜드 스토리와 핵심 메시지를 깊이 있게 전달하는 메인 영상</h3>
+            <div class="portfolio-copy">
+              <span class="portfolio-kicker">Longform</span>
+              <h3>브랜드 스토리와 핵심 메시지를 깊이 있게 전달하는 메인 영상</h3>
+              <p>긴 호흡의 서사와 메시지 전달에 최적화된 메인 필름</p>
+            </div>
           </article>
           <article class="portfolio-card">
-            <span class="portfolio-kicker">Shortform</span>
-            <h3>SNS 운영에 맞게 재가공되는 쇼츠, 릴스, 하이라이트 클립</h3>
+            <div class="portfolio-copy">
+              <span class="portfolio-kicker">Shortform</span>
+              <h3>SNS 운영에 맞게 재가공되는 쇼츠, 릴스, 하이라이트 클립</h3>
+              <p>채널 운영 흐름에 맞춰 빠르게 확장되는 숏폼 패키지</p>
+            </div>
           </article>
           <article class="portfolio-card">
-            <span class="portfolio-kicker">Corporate</span>
-            <h3>기업 홍보, 서비스 소개, IR 및 브랜딩 커뮤니케이션 영상</h3>
+            <div class="portfolio-copy">
+              <span class="portfolio-kicker">Corporate</span>
+              <h3>기업 홍보, 서비스 소개, IR 및 브랜딩 커뮤니케이션 영상</h3>
+              <p>기업의 목적과 신뢰를 명확하게 전하는 비즈니스 영상</p>
+            </div>
           </article>
           <article class="portfolio-card">
-            <span class="portfolio-kicker">Event / Public</span>
-            <h3>행사 오프닝, 현장 상영, 지자체 및 공공기관 홍보용 영상 패키지</h3>
+            <div class="portfolio-copy">
+              <span class="portfolio-kicker">Event / Public</span>
+              <h3>행사 오프닝, 현장 상영, 지자체 및 공공기관 홍보용 영상 패키지</h3>
+              <p>현장 맥락과 공공 메시지를 함께 설계하는 프로모션 세트</p>
+            </div>
           </article>
         </div>
       </section>
@@ -361,25 +391,25 @@
 
       const services = {
         "01": {
-          title: "홍보 목적과 타깃을 먼저 정리합니다.",
+          title: "홍보 목적과<br />타깃을 먼저<br />정리합니다.",
           description:
             "영상이 필요한 이유, 어디에 배포되는지, 어떤 반응을 만들고 싶은지부터 정리해 기획의 방향을 잡습니다.",
           className: "service-art-discover",
         },
         "02": {
-          title: "브랜드에 맞는 카피와 시각 콘셉트를 설계합니다.",
+          title: "브랜드에 맞는<br />카피와 시각 콘셉트를<br />설계합니다.",
           description:
             "기업 홍보든 지자체 캠페인이든, 보는 사람이 바로 이해할 수 있는 톤과 화면 흐름을 정합니다.",
           className: "service-art-design",
         },
         "03": {
-          title: "AI 기반 제작으로 속도와 완성도를 동시에 확보합니다.",
+          title: "AI 기반 제작으로<br />속도와 완성도를<br />동시에 확보합니다.",
           description:
             "메인 필름, 숏폼 파생본, 행사 상영용 클립까지 하나의 제작 시스템 안에서 빠르게 전개합니다.",
           className: "service-art-produce",
         },
         "04": {
-          title: "배포 채널에 맞게 결과물을 다시 최적화합니다.",
+          title: "배포 채널에 맞게<br />결과물을 다시<br />최적화합니다.",
           description:
             "유튜브, 인스타그램, 현장 스크린, 제안 페이지 등 실제 사용 환경에 맞춰 영상과 메시지를 재배치합니다.",
           className: "service-art-optimize",
@@ -402,7 +432,7 @@
         });
 
         servicePreview.className = `service-preview-art ${selected.className}`;
-        serviceTitle.textContent = selected.title;
+        serviceTitle.innerHTML = selected.title;
         serviceDescription.textContent = selected.description;
       };
 
